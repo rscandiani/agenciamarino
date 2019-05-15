@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Home CSS -->
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <title>Agência Marino</title>
+    <!-- Add Work Sans Regular Font -->
+    <style type="text/css">
+      @font-face {
+        font-family: "WorkSans-Regular";
+        src: url(fonts/WorkSans-Regular.ttf) format("truetype");
+      }  
+    </style>
+    <!-- Add Work Sans Semi-Bold Font -->
+    <style type="text/css">
+      @font-face {
+        font-family: "WorkSans-SemiBold";
+        src: url(fonts/WorkSans-SemiBold.ttf) format("truetype");
+      }  
+    </style>
+    <!-- Add Berlingske Serif-ExtraBold Font -->
+    <style type="text/css">
+      @font-face {
+        font-family: "BerlingskeSerif-ExtraBold";
+        src: url(fonts/BerlingskeSerif-ExtraBold.otf) format("opentype");
+      }  
+    </style>
+  </head>
+  <body>
+    <!-- Overlay Menu -->
+    <div id="myNav" class="overlay-menu">
+      <a href="javascript:void(0)" class="overlay-menu-close-button" onclick="closeNav()">&times;</a>
+      <div class="overlay-menu-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
+    <!-- Header Menu -->
+    <nav class="navbar header-menu">
+      <a class="navbar-brand" href="#">
+        <img src="media/MarinoLogo.png" width="150" height="41" class="d-inline-block align-top" alt="Logo da Agência Marino">
+      </a>
+      <div class="form-inline">
+        <span style="font-size:30px; cursor:pointer" onclick="openNav()" class="header-menu-button">
+          Menu
+        </span>
+
+      </div>
+    </nav>
+    <!-- Full width/height video with menu mobile devices -->
+    <header class="video-mobile">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/video.mp4" type="video/mp4">
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 align-items-center">
+          <div class="w-100">
+            <h1 class="title">
+              O rumo certo para a sua marca
+            </h1>
+            <ul style="list-style-type:none; padding-left: 0px;">
+              <li>
+                <a href="#" class="mobile-video-menu-style">Sobre a Marino</a>
+              </li>
+              <li>
+                <a href="#" class="mobile-video-menu-style">Nossos Projetos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Full width/height video with menu desktop devices -->
+    <header class="video-desktop">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/video.mp4" type="video/mp4">
+      </video>
+      <div class="container h-100">
+        <div class="d-flex h-100 text-center align-items-center">
+          <div class="w-100">
+            <h1 class="desktop-title">Daniel Dutra</h1>
+            <ul class="video-menu-position" style="list-style-type:none; width: 100%;">
+              <li class="item-list">
+                <a href="#">Sobre a Marino</a>
+              </li>
+              <li>|</li>
+              <li>
+                <a href="#">Nossos Projetos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="fluid-container welcome-content">
+      <div class="row">
+        <div class="col-12">
+          <p class="h1">Bem-vindo a bordo da Marino!
+          </p>
+        </div>
+        <div class="col-12">
+          <p class="text">Somos uma agência de gestão de marcas full-service. Nossa tripulação combina rotas de estratégia e criatividade para desenvolver marcas fortes.
+          </p>
+          <br />
+          <p><a href="#" class="text-link">Navague conosco</a></p>      
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Overlay Menu JS -->
+    <script>
+    function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+    }
+
+    function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+    }
+    </script>
+  </body>
+</html>
