@@ -50,6 +50,7 @@ header .container {
 	z-index: 4;
 	position: absolute;
 	width: 100%;
+	padding-top: 7.25%;
 }
 .header-menu-button{
 	color: white;	
@@ -175,4 +176,23 @@ header .container {
 	top: 15px;
 	right: 35px;
   }
+}
+
+
+.imagem{
+	max-width: 100%;
+}
+
+.home-client-title{
+	font-family: 'BerlingskeSerif-ExtraBold';
+	font-size: 3rem;
+	line-height: 1;
+}
+.home-client-text{
+	margin-top: 8.023%;
+}
+.home-client-name{
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	font-family: 'WorkSans-Regular';
 }
