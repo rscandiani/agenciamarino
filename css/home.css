@@ -79,14 +79,14 @@ header .container {
 .text{
 	color: white;	
 	font-family: 'WorkSans-Regular';
-	font-size: 32px;
+	font-size: 1.5rem;
 }
 .text-link{
 	color: #ffffff;
 	padding-bottom: 2%;
 	border-bottom: 2px #ffffff solid;
 	font-family: 'WorkSans-Regular';
-	font-size: 32px;
+	font-size: 1.5rem;
 }
 .welcome-content{
 	background-color: rgba(15, 28, 140, 1);
@@ -193,6 +193,10 @@ header .container {
 }
 .home-client-name{
 	text-transform: uppercase;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 	font-family: 'WorkSans-Regular';
+}
+
+.client-card{
+	margin-bottom: 12.379%;
 }
