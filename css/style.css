@@ -104,7 +104,7 @@ html{
   left: 0;
   background-color:rgba(15, 28, 140, 1);
   overflow-x: hidden;
-  transition: 0.2s;
+
 }
 
 .menu-sobreposto-botao, .menu-sobreposto-mobile  {
@@ -146,10 +146,19 @@ html{
   padding-left: 0px;
 }
 
+.botao-ativo{
+  border-bottom: 3px solid #fff;
+}
+
 .menu-sobreposto-mobile-idioma-link, .menu-sobreposto-mobile-sociais-link{
   color:#fff;
   font-family: 'WorkSans-Regular';
   font-size: 20px;
+}
+
+.menu-sobreposto-mobile-idioma-link:hover{
+  color: #fff;
+  border-bottom: 3px solid #fff;
 }
 
 .menu-sobreposto-mobile-sociais{
@@ -296,6 +305,8 @@ html{
   header .container {
     position: relative;
     z-index: 2;
+    padding-left: 20px;
+    padding-right: 20px;
   }
   
   .overlay-video {
@@ -374,7 +385,7 @@ html{
 
 .primeiro-conteudo-texto{
   color: white; 
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 20px;
   line-height: 1.4;
 }
@@ -400,10 +411,11 @@ html{
 
 .segundo-conteudo{
   padding-top: 50px;
+  margin-bottom: 90px;
 }
 
 .c2-cartao-cliente{
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .c2-zoom-in{
@@ -424,7 +436,7 @@ html{
 }
 
 .c2-cartao-cliente-chamada-wrap{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .c2-cartao-cliente-chamada{
@@ -432,7 +444,7 @@ html{
   color: #181818;
   text-decoration: none;
   font-size: 30px;
-  line-height: 1;
+  line-height: 32px;
   margin-bottom: 5px;
   cursor: pointer;
 }
@@ -445,7 +457,8 @@ html{
 .c2-cartao-cliente-nome{
   text-transform: uppercase;
   font-size: 18px;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
+  margin-bottom: 5px;
 }
 
 /***********************************************************/
@@ -461,7 +474,7 @@ html{
 }
 
 .c3-gif{
-  width: 90%;
+  width: 100%;
   height: 600px;
   background-color: #666666;
   margin: 0 auto;
@@ -476,6 +489,7 @@ html{
 
 .c3-servicos-lista{
   list-style: none;
+  margin-bottom: 20px;
 }
 
 .c3-titulo-lista{
@@ -505,7 +519,7 @@ html{
 /*********************************************************/
 
 .quarto-conteudo{
-  margin-bottom: 35px;
+  margin-bottom: 90px;
 }
 
 #c4-link-posicao{
@@ -840,7 +854,38 @@ html{
     font-size: 12px;
     text-align: right;
   }
-  
+
+  /**********************************************************/
+  /******************** Breakpoint 576px ********************/
+  /**********************************************************/
+
+  @media screen and (min-width: 576px){
+
+    .primeiro-conteudo, .segundo-conteudo, .terceiro-conteudo, .quarto-conteudo{
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+
+    .segundo-conteudo{
+      margin-bottom: 50px;
+    }
+
+    .c2-cartao-cliente{
+      padding-bottom: 50px;
+    }
+
+    .c3-titulo{
+      margin-bottom: 40px;
+    }
+
+    .c3-servicos{
+      margin-top: 30px;
+      margin-bottom: 50px
+    }
+
+  }
+
+
   /**********************************************************/
   /******************** Breakpoint 768px ********************/
   /**********************************************************/
