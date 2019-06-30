@@ -23,18 +23,13 @@ html{
   }
   
   @font-face {
-    font-family: "WorkSans-SemiBold";
-    src: url(fonts/WorkSans-SemiBold.ttf) format("truetype");
-  }
-  
-  @font-face {
-    font-family: "WorkSans-Regular";
-    src: url(fonts/WorkSans-Regular.ttf) format("truetype");
-  } 
-  
-  @font-face {
     font-family: "Apercu-Regular";
     src: url(fonts/Apercu-Regular.otf) format("opentype");
+  } 
+
+  @font-face {
+    font-family: "Apercu-Bold";
+    src: url(fonts/Apercu-Bold.otf) format("opentype");
   } 
   
   
@@ -109,7 +104,7 @@ html{
 
 .menu-sobreposto-botao, .menu-sobreposto-mobile  {
   font-size: 35px;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   color: #fff;
 }
 
@@ -128,7 +123,7 @@ html{
 
 .menu-sobreposto-link-mobile{
   color: #fff;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 40px;
   padding: 0px !important;
 }
@@ -152,7 +147,7 @@ html{
 
 .menu-sobreposto-mobile-idioma-link, .menu-sobreposto-mobile-sociais-link{
   color:#fff;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 20px;
 }
 
@@ -209,7 +204,7 @@ html{
 
 .menu-sobreposto-desktop-link{
   color: #fff;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 40px;
   padding: 0px !important;
   border-bottom: 1px solid #fff;
@@ -219,7 +214,7 @@ html{
 
 .menu-sobreposto-link-desktop:hover{
   color: #fff;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 40px;
   padding: 0px !important;
   border-bottom: 3px solid #fff;
@@ -241,7 +236,7 @@ html{
 
 .menu-sobreposto-desktop-sociais-link{
   color:#fff;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 18px;
   padding:0px !important;
   display: inline-block !important;
@@ -263,13 +258,13 @@ html{
 
 .desktop-menu-sobreposto-idioma-link{
   color:#fff;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 18px;
 }
 
 .desktop-menu-sobreposto-idioma-link{
   color:#fff;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 18px;
 }
   
@@ -352,7 +347,7 @@ html{
   .video-link{
     color: #ffffff;
     cursor: pointer;
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     font-size: 18px;
     text-decoration: none;
     border-bottom: 1px #ffffff solid;
@@ -395,7 +390,7 @@ html{
   cursor: pointer;
   text-decoration: none;
   border-bottom: 1px #ffffff solid;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 20px;
 }
 .primeiro-conteudo-link:hover{
@@ -471,6 +466,7 @@ html{
   line-height: 1;
   text-align: center;
   margin-bottom: 30px;
+  color: #0f1c8c;
 }
 
 .c3-gif{
@@ -483,7 +479,7 @@ html{
 .c3-servicos{
   margin-top: 20px;
   margin-bottom: 35px;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 18px;
 }
 
@@ -493,7 +489,8 @@ html{
 }
 
 .c3-titulo-lista{
-  font-family: 'WorkSans-SemiBold';
+  font-family: 'Apercu-Bold';
+  color: #0f1c8c;
 }
 
 .c3-servicos-link{
@@ -504,7 +501,7 @@ html{
   text-align: center;
   color: #000000;
   border-bottom: 1px #000000 solid;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 1.125rem;
 }
 
@@ -530,7 +527,7 @@ html{
   text-align: center;
   color: #000000;
   border-bottom: 1px #000000 solid;
-  font-family: 'WorkSans-Regular';
+  font-family: 'Apercu-Regular';
   font-size: 1.125rem;
 }
 
@@ -574,7 +571,7 @@ html{
   }
   
   #ro-email-titulo{
-    font-family: 'WorkSans-SemiBold';
+    font-family: 'Apercu-Bold';
     font-size: 14px;
     color: #1F5DCC;
     margin-bottom: 0px;
@@ -588,7 +585,7 @@ html{
   }
   
   input[type="text"] {
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     width: 100%;
     border:none;
     border-bottom: 2px solid #ffffff;
@@ -646,14 +643,14 @@ html{
   }
   
   .mobile-rodape-menu-titulo{
-    font-family: 'WorkSans-SemiBold';
+    font-family: 'Apercu-Bold';
     font-size: 14px;
     color: #1F5DCC;
     margin-bottom: 0px;
   }
   
   .ro-sociais-lista-item{
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     font-size: 18px;
     color: #fff;
   }
@@ -680,18 +677,18 @@ html{
   .mobile-avisos-link{
     border-bottom: 1px solid #fff;
     font-size: 12px;
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
   }
   
   .mobile-avisos-link:hover{
     border-bottom: 3px solid #fff;
     font-size: 14px;
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
   }
   
   .mobile-lista-divisoria{
     margin: 0 10px 0 10px;
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     font-size: 18px;
     color: #fff;
   }
@@ -712,7 +709,7 @@ html{
   }
   
   .desktop-rodape-titulo{
-    font-family: 'WorkSans-SemiBold';
+    font-family: 'Apercu-Bold';
     font-size: 14px;
     color: #1F5DCC;
     margin-bottom: 0px;
@@ -725,7 +722,7 @@ html{
   }
   
   .desktop-rodape-menu-item{
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     font-size: 14px;
     color: #fff;
     text-decoration: none;
@@ -820,7 +817,7 @@ html{
   
   .desktop-rodape-texto{
     color: #fff;
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     font-size: 14px;
   }
   
@@ -838,19 +835,19 @@ html{
   
   .desktop-rodape-avisos{
     color:#fff;
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     font-size: 12px;
   }
   
   .desktop-rodape-avisos a{
     color:#fff;
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     font-size: 12px;
   }
   
   .desktop-rodape-marino{
     color: #fff;
-    font-family: 'WorkSans-Regular';
+    font-family: 'Apercu-Regular';
     font-size: 12px;
     text-align: right;
   }
@@ -923,6 +920,24 @@ html{
       width: 115px; 
       height:30px; 
     }
+
+    .primeiro-conteudo, .segundo-conteudo, .terceiro-conteudo, .quarto-conteudo{
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+
+    .c2-cartao-cliente{
+      margin-bottom: 50px;
+    }
+
+    .float-direita{
+      float: right;
+    }
+
+    .float-esquerda{
+      float: left;
+    }
+
   }
   
   /***********************************************************/
@@ -930,6 +945,11 @@ html{
   /***********************************************************/
   
   @media screen and (min-width: 1200px){
+
+    .primeiro-conteudo, .segundo-conteudo, .terceiro-conteudo, .quarto-conteudo{
+      padding-left: 120px;
+      padding-right: 120px;
+    }
 
     .desktop-menu-sobreposto-logo-posicao{
       left: 90px;
@@ -961,7 +981,7 @@ html{
     }
 
     .video-link{
-        font-size: 24px;
+      font-size: 24px;
     }
   
     .rodape-fundo{
@@ -1079,7 +1099,16 @@ html{
     .menu-sobreposto-link{
       font-size: 48px;
     }
+
+    .primeiro-conteudo, .segundo-conteudo, .terceiro-conteudo, .quarto-conteudo{
+      padding-left: 200px;
+      padding-right: 200px;
+    }
   
+    .c2-cartao-cliente{
+      margin-bottom: 120px;
+    }
+
     .rodape-fundo{
       padding-left: 80px;
       padding-right: 80px;
@@ -1126,6 +1155,10 @@ html{
   /***********************************************************/
   
   @media screen and (min-width: 1920px){
+
+    .segundo-conteudo{
+      padding-top: 200px;
+    }
   
     .menu-superior-desktop{
       margin-top: 80px;
@@ -1136,6 +1169,66 @@ html{
     .menu-superior-logo{
       width: 180px;
       height: 50px;
+    }
+
+    .video-link{
+      font-size: 28px;
+    }
+
+    .primeiro-conteudo{
+      padding-top: 130px;
+      padding-bottom: 130px;
+    }
+
+    .primeiro-conteudo-titulo{
+      font-size: 64px;
+      line-height: 1.1;
+    }
+
+    .primeiro-conteudo-texto{
+      font-size: 32px;
+      line-height: 1.2;
+    }
+
+    .primeiro-conteudo-link{
+      font-size: 28px;
+    }
+
+    .c2-cartao-cliente-nome{
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    .c2-cartao-cliente-chamada{
+      font-size: 50px;
+      line-height: 1.1;
+    }
+
+    .terceiro-conteudo{
+      padding-left: 340px;
+      padding-right: 340px;
+      margin-bottom: 150px;
+    }
+
+    .c3-servicos{
+      margin-top: 65px;
+    }
+
+    .c3-titulo{
+      font-size: 64px;
+      margin-bottom: 100px;
+    }
+
+    .c3-titulo-lista, li{
+      font-size: 24px;
+    }
+
+    .c3-link{
+      font-size: 24px;
+    }
+
+    .c4-link{
+      font-size: 24px;
     }
     
     .rodape-fundo{
