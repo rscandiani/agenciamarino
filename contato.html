@@ -105,27 +105,21 @@
     </div>
   </div>
 
-  <!-- Home video -->
-  <header>
-    <div class="overlay-video"></div>
-      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="media/video.mp4" type="video/mp4">
-      </video>
-      <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-          <div class="w-100">
-            <h1 class="video-titulo">O rumo certo para a sua marca</h1>
-            <u class="menu-video">
-              <li class="video-item-menu"><a class="video-link" href="sobre.html">Sobre a Marino</a></li>
-              <li class="video-item-menu">|</li>
-              <li class="video-item-menu"><a class="video-link" href="projetos.html">Nossos Projetos</a></li>
-            </u>
-          </div>
-        </div>
-      </div>
-  </header>
+  <!-- Foto Destaque -->
+  <div>
 
-    
+  </div>
+  
+    <!-- Segundo Conteúdo -->
+    <div class="container-fluid">
+        <div class="row">
+        <div class="col-6">
+            <span id="datadesktop"></span><span id="diadasemanadesktop"></span><span id="horadesktop"></span>
+            <p class="contato-desktop-baixar-velas">Baixar Velas!</p>
+        </div>
+    </div>
+
+
   <!-- Rodapé para mobile -->
   <div  class="rodape-fundo rodape-mobile">
     <div class="container-fluid">
@@ -307,6 +301,43 @@
       });
     }
   </script>
+
+          <!-- Script para mostrar a data atual mobile -->
+          <script>
+            /** Data e hora **/
+            var dt = new Date();
+            document.getElementById("datamobile").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()+ " ");
+            
+            /** Dia da semana **/
+            var d = new Date();
+            var days = ["Domingo, ","Segunda-Feira, ","Terça-Feira, ","Quarta-feira, ","Quinta-Feira, ","Sexta-Feira, ","Sábado, "];
+            document.getElementById("diadasemanamobile").innerHTML = days[d.getDay()];
+
+            var dt = new Date();
+            document.getElementById("horamobile").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+
+        </script>
+
+        <!-- Script para mostrar a data atual  desktop -->
+        <script>
+                /** Data e hora **/
+                var dt = new Date();
+                document.getElementById("datadesktop").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()+ " ");
+                
+                /** Dia da semana **/
+                var d = new Date();
+                var days = ["Domingo, ","Segunda-Feira, ","Terça-Feira, ","Quarta-feira, ","Quinta-Feira, ","Sexta-Feira, ","Sábado, "];
+                document.getElementById("diadasemanadesktop").innerHTML = days[d.getDay()];
+    
+                var dt = new Date();
+                document.getElementById("horadesktop").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+    
+        </script>
+
+        <!-- Script do Tempo -->
+        <script>
+            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+        </script>
 
 
   <!-- Scripts do Bootstrap -->

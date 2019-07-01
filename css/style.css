@@ -206,17 +206,13 @@ html{
   color: #fff;
   font-family: 'Apercu-Regular';
   font-size: 40px;
-  padding: 0px !important;
   border-bottom: 1px solid #fff;
   width: fit-content;
   padding: 0px !important;
 }
 
-.menu-sobreposto-link-desktop:hover{
+.menu-sobreposto-desktop-link:hover{
   color: #fff;
-  font-family: 'Apercu-Regular';
-  font-size: 40px;
-  padding: 0px !important;
   border-bottom: 3px solid #fff;
 }
 
@@ -260,12 +256,12 @@ html{
   color:#fff;
   font-family: 'Apercu-Regular';
   font-size: 18px;
+  text-decoration: none;
 }
 
-.desktop-menu-sobreposto-idioma-link{
+.desktop-menu-sobreposto-idioma-link:hover{
   color:#fff;
-  font-family: 'Apercu-Regular';
-  font-size: 18px;
+  border-bottom: 3px solid #fff;
 }
   
 
@@ -422,6 +418,7 @@ html{
 
 .c2-zoom-in{
   overflow: hidden;
+  border: 20px solid transparent;
 }
 
 .c2-cartao-cliente-link{
@@ -439,6 +436,7 @@ html{
 
 .c2-cartao-cliente-chamada-wrap{
   margin-top: 10px;
+  padding-left: 20px;
 }
 
 .c2-cartao-cliente-chamada{
@@ -1258,4 +1256,10 @@ html{
   /******************************* CONTATO *************************************/
 
 
+  #datamobile, #diadasemanamobile, #horamobile{
+    font-family: 'Apercu-Regular';
+    font-size: 18px;
+    color: #181818;
+    line-height: 1.4;
+}
 
