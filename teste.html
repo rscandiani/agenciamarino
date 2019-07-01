@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Font Aweasome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+  <script
+    type="text/javascript"
+    src="/js/lib/dummy.js"
+    
+  ></script>
+
+    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <style id="compiled-css" type="text/css">
+      .slider{
+    height: 51vh;
+    overflow: hidden;
+}
+
+.slider img{
+    display: none;
+    height: 51vh;
+    transition: 3s;
+}
+
+.slider img.active{
+    display: inline-block;
+}
+
+.prev, .next{
+    cursor: pointer;
+}
+  </style>
+
+
+  <!-- TODO: Missing CoffeeScript 2 -->
+
+  <script type="text/javascript">
+//<![CDATA[
+
+    window.onload=function(){
+      
+$(document).ready(function () {
+
+    // Get images.
+    var images = $('.slider > img');
+
+    // Set starting index.
+    var index = images.index($('.active'));
+    $('#counter').text((index + 1) + ' of ' + images.length);
+
+    $('.next').on('click', function () {
+        var currentImg = $('.active');
+        var nextImg = currentImg.next();
+
+        if (nextImg.length) {
+            currentImg.removeClass('active').css('z-index', -10);
+            nextImg.addClass('active').css('z-index', 10);
+
+            // Find the index of the image.
+            var index = images.index(nextImg);
+            $('#counter').text((index + 1) + ' of ' + images.length);
+        }
+    });
+
+    $('.prev').on('click', function () {
+        var currentImg = $('.active');
+        var prevImg = currentImg.prev();
+
+        if (prevImg.length) {
+            currentImg.removeClass('active').css('z-index', -10);
+            prevImg.addClass('active').css('z-index', 10);
+
+            // Find the index of the image.
+            var index = images.index(prevImg);
+            $('#counter').text((index + 1) + ' of ' + images.length);
+        }
+    });
+});
+
+    }
+
+//]]></script>
+
+</head>
+<body>
+    <div class="slider">
+ <img src="http://placehold.it/250x500" class="active"/>
+ <img src="http://placehold.it/200x500" />
+ <img src="http://placehold.it/100x500" />
+</div>
+
+
+<!--  ARROW AND COUNTER  -->
+<div>
+ <img src="assets/img/arrow-prev.png" class="prev" alt="Prev Arrow"/>
+ <span id="counter"></span>
+ <img src="assets/img/arrow-next.png" class="next" alt="Next Arrow"/>
+</div>
+
+  
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "e615c0r3"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+</body>
+</html>
