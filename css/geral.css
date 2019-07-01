@@ -79,18 +79,18 @@ html{
   /****************************************************************/
   
   @media screen and (max-width: 575px) {
-  .menu-sobreposto-desktop {
+  .de-menu-sobreposto {
     display: none;
   }
   }
   
   @media screen and (min-width: 576px) {
-  .menu-sobreposto-mobile {
+  .mo-menu-sobreposto {
     display: none;
   }
   }
   
-  .menu-sobreposto-mobile {
+  .mo-menu-sobreposto {
   height: 100%;
   width: 0;
   position: fixed;
@@ -101,41 +101,60 @@ html{
   overflow-x: hidden;
   
   }
+
+  .mo-sobreposto-logo{
+    width: 115px; 
+    height:30px; 
+  }
   
-  .menu-sobreposto-botao, .menu-sobreposto-mobile  {
+  .mo-menu-sobreposto-botao-fechar, .mo-menu-sobreposto  {
   font-size: 35px;
   font-family: 'Apercu-Regular';
   color: #fff;
   }
+
+  .mo-menu-sobreposto-botao-fechar:hover{
+      color: #f2f2f2;
+  }
+
+  .mo-menu-sobreposto-botao-fechar:active{
+    color: #f2f2f2;
+    transform: scale(0.8);
+}
   
-  .menu-sobreposto-mobile-conteudo {
+  .mo-menu-sobreposto-conteudo {
   position: relative;
   top: 10%;
   width: 100%;
   text-align: center;
   }
   
-  .menu-sobreposto-mobile a {
+  .mo-menu-sobreposto a {
   padding: 8px;
   text-decoration: none;
   display: block;
   }
   
-  .menu-sobreposto-link-mobile{
+  .mo-sobreposto-conteudo-link{
   color: #fff;
   font-family: 'Apercu-Regular';
   font-size: 40px;
   padding: 0px !important;
+  text-decoration: none;
+  }
+
+  .mo-sobreposto-conteudo-link:hover{
+    color: #fff;
   }
   
-  .menu-sobreposto-mobile-idioma{
+  .mo-menu-sobreposto-idioma{
   position: relative;
   width:100%;
   text-align: center;
   top:25%;
   }
   
-  .menu-sobreposto-mobile-idioma-lista, .menu-sobreposto-mobile-sociais-lista{
+  .mo-menu-sobreposto-idioma-lista, .mo-menu-sobreposto-sociais-lista{
   list-style: none;
   display:inline-flex;
   padding-left: 0px;
@@ -145,29 +164,29 @@ html{
   border-bottom: 3px solid #fff;
   }
   
-  .menu-sobreposto-mobile-idioma-link, .menu-sobreposto-mobile-sociais-link{
+  .mo-menu-sobreposto-idioma-lista-link, .mo-menu-sobreposto-sociais-lista-link{
   color:#fff;
   font-family: 'Apercu-Regular';
   font-size: 20px;
   }
   
-  .menu-sobreposto-mobile-idioma-link:hover{
+  .mo-menu-sobreposto-idioma-lista-link:hover{
   color: #fff;
   border-bottom: 3px solid #fff;
   }
-  
-  .menu-sobreposto-mobile-sociais{
-  position: relative;
-  width:100%;
-  text-align: center;
-  top:25%;
-  }
+
+  .mo-menu-sobreposto-sociais{
+    position: relative;
+    width:100%;
+    text-align: center;
+    top:25%;
+    }
   
   /*****************************************************************/
   /******************** Menu sobreposto desktop ********************/
   /*****************************************************************/
   
-  .menu-sobreposto-desktop{
+  .de-menu-sobreposto{
   height: 100%;
   width: 0;
   position: fixed;
@@ -179,16 +198,16 @@ html{
   transition: 0.2s;
   }
   
-  .menu-sobreposto-header-desktop{
+  .de-menu-sobreposto-header{
   padding: 50px 80px 50px 80px;
   }
   
-  .menu-sobreposto-desktop-logo{
+  .de-menu-sobreposto-logo{
   width: 190px;
   height: 50px;
   }
   
-  .menu-sobreposto-desktop-conteudo {
+  .de-menu-sobreposto-conteudo{
   position: relative;
   top: 5%;
   width: 100%;
@@ -200,9 +219,10 @@ html{
   padding: 8px;
   text-decoration: none;
   display: block;
+  width: fit-content;
   }
   
-  .menu-sobreposto-desktop-link{
+  .de-menu-sobreposto-link{
   color: #fff;
   font-family: 'Apercu-Regular';
   font-size: 40px;
@@ -211,32 +231,39 @@ html{
   padding: 0px !important;
   }
   
-  .menu-sobreposto-desktop-link:hover{
+  .de-menu-sobreposto-link:hover{
   color: #fff;
   border-bottom: 3px solid #fff;
   }
   
-  .menu-sobreposto-desktop-sociais{
+  .de-menu-sobreposto-sociais{
   position: relative;
   width:100%;
   text-align: left;
   top:10%;
   }
   
-  .menu-sobreposto-desktop-sociais-lista{
+  .de-menu-sobreposto-sociais-lista{
   list-style: none;
   position: relative;
   padding-left: 0px;
   left: 80px;
   }
   
-  .menu-sobreposto-desktop-sociais-link{
+  .de-menu-sobreposto-sociais-lista-link{
   color:#fff;
   font-family: 'Apercu-Regular';
   font-size: 18px;
   padding:0px !important;
   display: inline-block !important;
+  text-decoration: none;
+  border-bottom: 1px solid #fff;
   }
+
+  .de-menu-sobreposto-sociais-lista-link:hover{
+    color:#fff;
+    border-bottom: 3px solid #fff;
+}
   
   .menu-sobreposto-desktop-idioma{
   position: relative;
