@@ -241,6 +241,7 @@ html{
   width:100%;
   text-align: left;
   top:10%;
+  left: 80px;
   }
   
   .de-menu-sobreposto-sociais-lista{
@@ -250,17 +251,16 @@ html{
   left: 80px;
   }
   
-  .de-menu-sobreposto-sociais-lista-link{
-  color:#fff;
-  font-family: 'Apercu-Regular';
-  font-size: 18px;
-  padding:0px !important;
-  display: inline-block !important;
-  text-decoration: none;
-  cursor: pointer;
+  .de-menu-sobreposto-sociais-link{
+    color: #fff;
+    font-family: 'Apercu-Regular';
+    font-size: 18px;
+    border-bottom: 1px solid #fff;
+    width: fit-content;
+    padding: 0px !important;
   }
 
-  .de-menu-sobreposto-sociais-lista-link:hover{
+  .de-menu-sobreposto-sociais-link:hover{
     color: #fff;
     border-bottom: 3px solid #fff;
   }
