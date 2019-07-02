@@ -257,15 +257,15 @@ html{
   padding:0px !important;
   display: inline-block !important;
   text-decoration: none;
-  border-bottom: 1px solid #fff;
+  cursor: pointer;
   }
 
   .de-menu-sobreposto-sociais-lista-link:hover{
-    color:#fff;
+    color: #fff;
     border-bottom: 3px solid #fff;
-}
+  }
   
-  .menu-sobreposto-desktop-idioma{
+  .de-menu-sobreposto-idioma{
   position: relative;
   width:100%;
   text-align: right;
@@ -279,14 +279,14 @@ html{
   padding-left: 0px;
   }
   
-  .desktop-menu-sobreposto-idioma-link{
+  .de-menu-sobreposto-idioma-link{
   color:#fff;
   font-family: 'Apercu-Regular';
   font-size: 18px;
   text-decoration: none;
   }
   
-  .desktop-menu-sobreposto-idioma-link:hover{
+  .de-menu-sobreposto-idioma-link:hover{
   color:#fff;
   border-bottom: 3px solid #fff;
   }
@@ -793,7 +793,6 @@ html{
     }
     .desktop-rodape-titulo{
       font-size:20px;
-      margin-bottom: 5px;
     }
     .desktop-rodape-menu-item{
       font-size: 18px;
@@ -843,10 +842,6 @@ html{
     .rodape-fundo{
       padding-left: 200px;
       padding-right: 200px;
-    }
-  
-    .desktop-rodape-lista-item{
-        padding-bottom: 5px;
     }
   
   }
