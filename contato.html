@@ -9,13 +9,17 @@
   <!-- Responsividade -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Linkando o CSS Geral -->
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/geral.css">
   <!-- Linkando o CSS Contato -->
   <link rel="stylesheet" href="./css/contato.css">
   <!-- Linkando a biblioteca de animações -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvrsXRTI2A3DlzrXmzQsXgdF1yU3jvkOM&callback=initMap">
+  </script>
 </head>
-<body>
+<body style="background-color:#f9f7f3;">
 
   <!-- Menu superior mobile -->
   <div class="menu-superior-mobile">
@@ -37,90 +41,146 @@
   </div>
 
   <!-- Menu sobreposto mobile -->
-  <div id="myNavMobile" class="menu-sobreposto-mobile">
+  <div id="myNavMobile" class="mo-menu-sobreposto">
     <!-- Cabeçalho do Menu Sobreposto -->
     <nav class="navbar">
-      <a href="#"><img src="./media/comum/MarinoLogo.png" class="menu-superior-logo" alt="Logo da Agência Marino"> </a>
-      <a href="javascript:void(0)" class="menu-sobreposto-botao" onclick="closeNavMo()"><i class="fas fa-times"></i></a>
+      <a href="#"><img src="./media/comum/MarinoLogo.png" class="mo-sobreposto-logo" alt="Logo da Agência Marino"></a>
+      <a href="javascript:void(0)" class="mo-sobreposto-botao-fechar" onclick="closeNavMo()"><i class="fas fa-times"></i></a>
     </nav>
     <!-- Conteúdo Principal do Menu -->
-    <div class="menu-sobreposto-mobile-conteudo">
-      <a href="#" class="menu-sobreposto-link-mobile" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1100">Sobre</a>
-      <a href="#" class="menu-sobreposto-link-mobile" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1200">Serviços</a>
-      <a href="#" class="menu-sobreposto-link-mobile" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300">Projetos</a>
-      <a href="#" class="menu-sobreposto-link-mobile" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1400">Convés</a>
-      <a href="#" class="menu-sobreposto-link-mobile" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1500">Contato</a>
+    <div class="mo-menu-sobreposto-conteudo">
+      <a href="#" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1100">Sobre</a>
+      <a href="#" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1200">Serviços</a>
+      <a href="#" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300">Projetos</a>
+      <a href="#" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1400">Convés</a>
+      <a href="#" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1500">Contato</a>
     </div>
     <!-- Troca de Idioma -->
-    <div class="menu-sobreposto-mobile-idioma">
-      <ul class="menu-sobreposto-mobile-idioma-lista">
-        <li><a href="#" class="menu-sobreposto-mobile-idioma-link botao-ativo">PT</a></li>
-        <li><a href="#" class="menu-sobreposto-mobile-idioma-link">|</a></li>
-        <li><a href="#" class="menu-sobreposto-mobile-idioma-link">EN</a></li>
+    <div class="mo-menu-sobreposto-idioma">
+      <ul class="mo-menu-sobreposto-idioma-lista">
+        <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link botao-ativo">PT</a></li>
+        <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link">|</a></li>
+        <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link">EN</a></li>
       </ul>
     </div>
     <!-- Redes Sociais -->
-    <div class="menu-sobreposto-mobile-sociais">
-        <ul class="menu-sobreposto-mobile-sociais-lista">
-          <li><a href="https://www.instagram.com/agenciamarino/" class="menu-sobreposto-mobile-sociais-link">instagram</a></li>
-          <li><a href="https://www.facebook.com/agenciamarino/" class="menu-sobreposto-mobile-sociais-link">facebook</a></li>
-          <li><a href="#" class="menu-sobreposto-mobile-sociais-link">whatsapp</a></li>
+    <div class="mo-menu-sobreposto-sociais">
+        <ul class="mo-menu-sobreposto-sociais-lista">
+          <li><a href="https://www.instagram.com/agenciamarino/" class="mo-menu-sobreposto-sociais-lista-link">instagram</a></li>
+          <li><a href="https://www.facebook.com/agenciamarino/" class="mo-menu-sobreposto-sociais-lista-link">facebook</a></li>
+          <li><a href="#" class="mo-menu-sobreposto-sociais-lista-link">whatsapp</a></li>
         </ul>
       </div>
   </div>
 
   <!-- Menu sobreposto desktop -->
-  <div id="myNavDesktop" class="overlay-desktop menu-sobreposto-desktop">
+  <div id="myNavDesktop" class="overlay-desktop de-menu-sobreposto">
     <!-- Cabeçalho -->
-    <nav class="navbar menu-sobreposto-header-desktop">
+    <nav class="navbar de-menu-sobreposto-header">
       <!-- Logo  -->
-      <a href="#"><img src="./media/comum/MarinoLogo.png" class="menu-sobreposto-desktop-logo" alt="Logo da Agência Marino"></a>
+      <a href="#"><img src="./media/comum/MarinoLogo.png" class="de-menu-sobreposto-logo" alt="Logo da Agência Marino"></a>
       <!-- Botão de fechar -->
-      <a href="javascript:void(0)" class="menu-sobreposto-botao" onclick="closeNavDe()"><i class="fas fa-times"></i></a>
+      <a href="javascript:void(0)" class="mo-menu-sobreposto-botao-fechar" onclick="closeNavDe()"><i class="fas fa-times"></i></a>
     </nav>
     <!-- Conteúdo Principal -->
-    <div class="menu-sobreposto-desktop-conteudo">
-        <a href="#"><span class="menu-sobreposto-desktop-link">Sobre</span></a>
-        <a href="#"><span class="menu-sobreposto-desktop-link">Serviços</span></a>
-        <a href="#"><span class="menu-sobreposto-desktop-link">Projetos</span></a>
-        <a href="#"><span class="menu-sobreposto-desktop-link">Convés</span></a>
-        <a href="#"><span class="menu-sobreposto-desktop-link">Contato</span></a>
+    <div class="de-menu-sobreposto-conteudo">
+        <a href="#"><span class="de-menu-sobreposto-link" >Sobre</span></a>
+        <a href="#"><span class="de-menu-sobreposto-link">Serviços</span></a>
+        <a href="#"><span class="de-menu-sobreposto-link">Projetos</span></a>
+        <a href="#"><span class="de-menu-sobreposto-link">Convés</span></a>
+        <a href="#"><span class="de-menu-sobreposto-link">Contato</span></a>
     </div>
     <!-- Sociais -->
-    <div class="menu-sobreposto-desktop-sociais">
-      <ul class="menu-sobreposto-desktop-sociais-lista">
-        <li><a href="https://www.instagram.com/agenciamarino/" target="_blank" class="menu-sobreposto-desktop-sociais-link">instagram</a></li>
-        <li><a href="https://www.facebook.com/agenciamarino/" target="_blank" class="menu-sobreposto-desktop-sociais-link">facebook</a></li>
-        <li><a href="#" target="_blank" class="menu-sobreposto-desktop-sociais-link">whatsapp</a></li>
-        <br>
-        <li><a href="tel:+552721417205" class="menu-sobreposto-desktop-sociais-link">+55 27 2141-7205</a></li>
-        <li><a href="mailto:contato@agenciamarino.com.br" class="menu-sobreposto-desktop-sociais-link">contato@agenciamarino.com.br</a></li>
-      </ul>
-    </div>
-    <!-- Idioma -->
-    <div class="menu-sobreposto-desktop-idioma">
-      <u class="menu-sobreposto-desktop-idioma-lista">
-        <li><a href="#" class="desktop-menu-sobreposto-idioma-link">EN</a></li>
-        <li><a href="#" class="desktop-menu-sobreposto-idioma-link" style="padding-left: 10px; padding-right:10px;">|</a></li>
-        <li><a href="#" class="desktop-menu-sobreposto-idioma-link">PT</a></li>
-      </u>
+    <div class="de-menu-sobreposto-sociais">
+      <a href="https://www.instagram.com/agenciamarino/" target="_blank"><span class="de-menu-sobreposto-sociais-link">instagram</span></a>
+      <a href="https://www.facebook.com/agenciamarino/" target="_blank"><span class="de-menu-sobreposto-sociais-link">facebook</span></a>
+      <a href="#" target="_blank"><span class="de-menu-sobreposto-sociais-link">whatsapp</span></a>
+      <br>
+      <a href="tel:+552721417205"><span class="de-menu-sobreposto-sociais-link">+55 27 2141-7205</span></a>
+      <a href="mailto:contato@agenciamarino.com.br" target="_blank"><span class="de-menu-sobreposto-sociais-link">contato@agenciamarino.com.br</span></a>
     </div>
   </div>
 
-  <!-- Foto Destaque -->
-  <div class="container-fluid contato-header">
-    <img src="./media/contato/contato-foto-destaque.png" class="contato-header-imagem">
-  </div>
-  
-    <!-- Segundo Conteúdo -->
-    <div class="container-fluid">
-        <div class="row">
-        <div class="col-6">
-            <span id="datadesktop"></span><span id="diadasemanadesktop"></span><span id="horadesktop"></span>
-            <p class="contato-desktop-baixar-velas">Baixar Velas!</p>
+  <!-- Contato imagem -->
+  <header>
+    <div class="home-video-overlay"></div>
+      <img src="./media/contato/contato-foto-destaque.png">
+  </header>
+
+
+  <!-- Contato Mobile -->
+  <div class="mo-contato">
+    <!-- Primeiro Conteúdo -->
+    <div class="container-fluid c1">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <span id="datamo"></span><span id="diadasemanamo"></span><span id="horamo"></span>
+          <p class="c1-titulo">Baixar Velas!</p>
         </div>
+        <div class="col-12 col-md-6">
+          <p class="c1-coordenadas">
+                20020’22.9”S<br>
+                40023’29.9”W
+          </p>
+        </div>
+      </div>
     </div>
 
+    <!-- Segundo Conteúdo -->
+    <div class="container-fluid c2">
+      <div class="row">
+        <div class="col-12">
+          <p class="c2-titulo">Envie um sinal para<br>
+            a nossa tripulação</p>
+          <!-- Endereço -->
+          <div class="c2-endereco">
+            <p class="c2-texto">Avenida Expedito Garcia, 99<br>
+              Shopping Campo Grande<br>
+              Piso Superior, Sala 30<br>
+              Cariacica, ES - Brasil.</p>
+            <a href="#" class="c2-link">Ver mapa</a>
+          </div>
+          <!-- Contato -->
+          <div class="c2-contato">
+            <ul class="c2-contato-lista">
+              <li class="c2-contato-lista-item"><a href="#" class="c2-link">+55 27 2141-7205</a></li>
+              <li class="c2-contato-lista-item"><a href="#" class="c2-link">+55 27 99690-7205</a></li>
+              <li class="c2-contato-lista-item"><a href="#" class="c2-link">contato@agenciamarino.com.br</a></li>
+            </ul>
+            <a href="#" class="c2-link">Fale no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quarto Conteúdo -->
+    <div class="container-fluid c4">
+      <div class="row">
+        <div class="col-12">
+          <!-- Negócios -->
+          <div class="c4-negocios">
+            <p class="c4-negocios-titulo">Novos Negocios</p>
+            <p class="c4-texto">Para conhecer melhor a Marino e as soluções que podemos oferecer para o seu negócio, entre em contato.</p>
+            <a href="#" class="c4-link">adm@agenciamarino.com.br</a>
+          </div>
+          <!-- Vagas -->
+          <div class="c4-vagas">
+            <p class="c4-negocios-titulo">Vagas</p>
+            <p class="c4-texto">Vocês acha que as suas habilidades podem
+                acrescentar à nossa tripulação? Envie o seu currículo e portfólio para nós.</p>
+            <a href="#" class="c4-link">vagas@agenciamarino.com.br</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sexto Conteúdo -->
+    <div class="container-fluid c6">
+      <div id="mapa">
+
+      </div>
+    </div>
+  </div>
 
   <!-- Rodapé para mobile -->
   <div  class="rodape-fundo rodape-mobile">
@@ -282,6 +342,17 @@
       }
   </script>
 
+  <!-- Script do Google Maps -->
+  <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('mapa'), {
+          center: {lat: 20.20225, lng: 40.23309},
+          zoom: 8
+        });
+      }
+  </script>
+
   <!-- Script para habilitar as animações de fade -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -304,42 +375,42 @@
     }
   </script>
 
-          <!-- Script para mostrar a data atual mobile -->
-          <script>
-            /** Data e hora **/
-            var dt = new Date();
-            document.getElementById("datamobile").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()+ " ");
-            
-            /** Dia da semana **/
-            var d = new Date();
-            var days = ["Domingo, ","Segunda-Feira, ","Terça-Feira, ","Quarta-feira, ","Quinta-Feira, ","Sexta-Feira, ","Sábado, "];
-            document.getElementById("diadasemanamobile").innerHTML = days[d.getDay()];
+  <!-- Script para mostrar a data atual mobile -->
+  <script>
+  /** Data e hora **/
+  var dt = new Date();
+  document.getElementById("datamo").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()+ " ");
 
-            var dt = new Date();
-            document.getElementById("horamobile").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+  /** Dia da semana **/
+  var d = new Date();
+  var days = ["Domingo, ","Segunda-Feira, ","Terça-Feira, ","Quarta-feira, ","Quinta-Feira, ","Sexta-Feira, ","Sábado, "];
+  document.getElementById("diadasemanamo").innerHTML = days[d.getDay()];
 
-        </script>
+  var dt = new Date();
+  document.getElementById("horamo").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
 
-        <!-- Script para mostrar a data atual  desktop -->
-        <script>
-                /** Data e hora **/
-                var dt = new Date();
-                document.getElementById("datadesktop").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()+ " ");
-                
-                /** Dia da semana **/
-                var d = new Date();
-                var days = ["Domingo, ","Segunda-Feira, ","Terça-Feira, ","Quarta-feira, ","Quinta-Feira, ","Sexta-Feira, ","Sábado, "];
-                document.getElementById("diadasemanadesktop").innerHTML = days[d.getDay()];
-    
-                var dt = new Date();
-                document.getElementById("horadesktop").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
-    
-        </script>
+  </script>
 
-        <!-- Script do Tempo -->
-        <script>
-            !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-        </script>
+  <!-- Script para mostrar a data atual  desktop -->
+  <script>
+          /** Data e hora **/
+          var dt = new Date();
+          document.getElementById("datade").innerHTML = (("0"+dt.getDate()).slice(-2)) +"/"+ (("0"+(dt.getMonth()+1)).slice(-2)) +"/"+ (dt.getFullYear()+ " ");
+          
+          /** Dia da semana **/
+          var d = new Date();
+          var days = ["Domingo, ","Segunda-Feira, ","Terça-Feira, ","Quarta-feira, ","Quinta-Feira, ","Sexta-Feira, ","Sábado, "];
+          document.getElementById("diadasemanade").innerHTML = days[d.getDay()];
+
+          var dt = new Date();
+          document.getElementById("horade").innerHTML = (("0"+dt.getHours()).slice(-2)) +":"+ (("0"+dt.getMinutes()).slice(-2));
+
+  </script>
+
+  <!-- Script do Tempo -->
+  <script>
+      !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+  </script>
 
 
   <!-- Scripts do Bootstrap -->
