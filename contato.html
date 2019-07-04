@@ -14,10 +14,8 @@
   <link rel="stylesheet" href="./css/contato.css">
   <!-- Linkando a biblioteca de animações -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvrsXRTI2A3DlzrXmzQsXgdF1yU3jvkOM&callback=initMap">
-  </script>
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body style="background-color:#f9f7f3;">
 
@@ -107,18 +105,17 @@
       <img src="./media/contato/contato-foto-destaque.png">
   </header>
 
-
   <!-- Contato Mobile -->
   <div class="mo-contato">
     <!-- Primeiro Conteúdo -->
-    <div class="container-fluid c1">
+    <div class="container-fluid mo-c1">
       <div class="row">
         <div class="col-12 col-md-6">
           <span id="datamo"></span><span id="diadasemanamo"></span><span id="horamo"></span>
-          <p class="c1-titulo">Baixar Velas!</p>
+          <p class="mo-c1-titulo">Baixar Velas!</p>
         </div>
         <div class="col-12 col-md-6">
-          <p class="c1-coordenadas">
+          <p class="mo-c1-coordenadas">
                 20020’22.9”S<br>
                 40023’29.9”W
           </p>
@@ -127,59 +124,173 @@
     </div>
 
     <!-- Segundo Conteúdo -->
-    <div class="container-fluid c2">
+    <div class="container-fluid mo-c2">
       <div class="row">
         <div class="col-12">
-          <p class="c2-titulo">Envie um sinal para<br>
+          <p class="mo-c2-titulo">Envie um sinal para<br>
             a nossa tripulação</p>
           <!-- Endereço -->
-          <div class="c2-endereco">
-            <p class="c2-texto">Avenida Expedito Garcia, 99<br>
+          <div class="mo-c2-endereco">
+            <p class="mo-c2-texto">Avenida Expedito Garcia, 99<br>
               Shopping Campo Grande<br>
               Piso Superior, Sala 30<br>
               Cariacica, ES - Brasil.</p>
-            <a href="#" class="c2-link">Ver mapa</a>
+            <a href="#" class="mo-c2-link">Ver mapa</a>
           </div>
           <!-- Contato -->
-          <div class="c2-contato">
-            <ul class="c2-contato-lista">
-              <li class="c2-contato-lista-item"><a href="#" class="c2-link">+55 27 2141-7205</a></li>
-              <li class="c2-contato-lista-item"><a href="#" class="c2-link">+55 27 99690-7205</a></li>
-              <li class="c2-contato-lista-item"><a href="#" class="c2-link">contato@agenciamarino.com.br</a></li>
+          <div class="mo-c2-contato">
+            <ul class="mo-c2-contato-lista">
+              <li class="mo-c2-contato-lista-item"><a href="#" class="mo-c2-link">+55 27 2141-7205</a></li>
+              <li class="mo-c2-contato-lista-item"><a href="#" class="mo-c2-link">+55 27 99690-7205</a></li>
+              <li class="mo-c2-contato-lista-item"><a href="#" class="mo-c2-link">contato@agenciamarino.com.br</a></li>
             </ul>
-            <a href="#" class="c2-link">Fale no WhatsApp</a>
+            <a href="#" class="mo-c2-link">Fale no WhatsApp</a>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terceiro Conteúdo -->
+    <div class="container-fluid mo-c3">
+
+
+
+
+
+
+
+    </div>
+
+    <!-- Quarto Conteúdo -->
+    <div class="container-fluid mo-c4">
+      <div class="row">
+        <div class="col-12">
+          <!-- Negócios -->
+          <div class="mo-c4-negocios">
+            <p class="mo-c4-negocios-titulo">Novos Negocios</p>
+            <p class="mo-c4-texto">Para conhecer melhor a Marino e as soluções que podemos oferecer para o seu negócio, entre em contato.</p>
+            <a href="#" class="mo-c4-link">adm@agenciamarino.com.br</a>
+          </div>
+          <!-- Vagas -->
+          <div class="mo-c4-vagas">
+            <p class="mo-c4-negocios-titulo">Vagas</p>
+            <p class="mo-c4-texto">Vocês acha que as suas habilidades podem
+                acrescentar à nossa tripulação? Envie o seu currículo e portfólio para nós.</p>
+            <a href="#" class="mo-c4-link">vagas@agenciamarino.com.br</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quinto Conteúdo -->
+    <div class="container-fluid mo-c5">
+    </div>
+  </div>
+
+  <!-- Contato Desktop -->
+  <div class="de-contato">
+    <!-- Primeiro Conteúdo -->
+    <div class="container-fluid de-c1">
+      <div class="row">
+        <div class="col-6">
+          <p class="de-c1-titulo">Envie um sinal para<br> a nossa tripulação</p>
+        </div>
+        <div class="col-6">
+          <p class="de-c1-dia">
+            <span id="datade"></span><span id="diadasemanade"></span><span id="horade"></span>
+          </p>
+          <p class="de-c1-subtitulo">Baixar Velas</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Segundo Conteúdo -->
+    <div class="container-fluid de-c2">
+      <div class="row">
+        <!-- Endereco -->
+        <div class="col-4">
+          <p class="de-c2-texto">Avenida Expedito Garcia, 99<br>
+              Shopping Campo Grande<br>
+              Piso Superior, Sala 30<br>
+              Cariacica, ES - Brasil.</p>
+              <a class="de-c2-link">Ver mapa</a>
+        </div>
+
+        <!-- Contato -->
+        <div class="col-4">
+          <ul class="de-c2-lista">
+            <li class="de-c2-lista-item"><a href="#" class="de-c2-lista-link">contato@agenciamarino.com.br</a></li>
+            <li class="de-c2-lista-item"><a href="#" class="de-c2-lista-link">+55 27 2141-7205</a></li>
+            <li class="de-c2-lista-item"><a href="#" class="de-c2-lista-link">+55 27 99690-7205</a></li>
+            <li class="de-c2-lista-item"><a href="#" class="de-c2-lista-link">+55 27 98116-8136</a></li>
+          </ul>
+          <a class="de-c2-link">Fale no WhatsApp</a>
+        </div>
+
+        <!-- Coordenadas -->
+        <div class="col-4">
+          <p class="de-c2-coordenadas">20020’22.9”S<br>
+              40023’29.9”W</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Terceiro Conteúdo -->
+    <div class="container-fluid de-c3">
+      <!--  Contador  -->
+      <div class="contador">
+          <span id="counter"></span>
+      </div>
+      
+      <!-- Slider -->
+      <div class="slider-wrap">
+        <!-- Direcional Esquerda -->
+        <div class="direcional-esquerda">
+          <img src="./media/contato/contato-slider-proxima.png" class="slider-botao-proximo" alt="Next Arrow">
+        </div>
+
+        <!-- Direcional Direita -->
+        <div class="direcional-direita">
+          <img src="./media/contato/contato-slider-anterior.png" class="slider-botao-anterior" alt="Next Arrow">,
+        </div>
+
+        <!-- Imagens -->
+        <div class="slider">
+          <img src="./media/contato/contato-foto-destaque.png" class="active"/>
+          <img src="./media/contato/contato-foto-destaque.png" />
+          <img src="./media/contato/contato-foto-destaque.png" />
+          <img src="./media/contato/contato-foto-destaque.png" />
+          <img src="./media/contato/contato-foto-destaque.png" />
+          <img src="./media/contato/contato-foto-destaque.png" />
+          <img src="./media/contato/contato-foto-destaque.png" />
+          <img src="./media/contato/contato-foto-destaque.png" />
+          <img src="./media/contato/contato-foto-destaque.png" />
         </div>
       </div>
     </div>
 
     <!-- Quarto Conteúdo -->
-    <div class="container-fluid c4">
+    <div class="container-fluid de-c4">
       <div class="row">
-        <div class="col-12">
-          <!-- Negócios -->
-          <div class="c4-negocios">
-            <p class="c4-negocios-titulo">Novos Negocios</p>
-            <p class="c4-texto">Para conhecer melhor a Marino e as soluções que podemos oferecer para o seu negócio, entre em contato.</p>
-            <a href="#" class="c4-link">adm@agenciamarino.com.br</a>
-          </div>
-          <!-- Vagas -->
-          <div class="c4-vagas">
-            <p class="c4-negocios-titulo">Vagas</p>
-            <p class="c4-texto">Vocês acha que as suas habilidades podem
-                acrescentar à nossa tripulação? Envie o seu currículo e portfólio para nós.</p>
-            <a href="#" class="c4-link">vagas@agenciamarino.com.br</a>
-          </div>
+        <div class="col-5 de-c4-negocios">
+          <p class="de-c4-titulo">Novos Negócios</p>
+          <p class="de-c4-texto">Para conhecer melhor a Marino e as soluções que podemos oferecer para o seu negócio, entre em contato.</p>
+          <a href="#" class="de-c4-link">adm@agenciamarino.com.br</a>
+        </div>
+        <div class="col-5">
+          <p class="de-c4-titulo">Vagas</p>
+          <p class="de-c4-texto">Vocês acha que as suas habilidades podem acrescentar à nossa tripulação? Envie o seu currículo e portfólio para nós.</p>
+          <a href="#" class="de-c4-link">adm@agenciamarino.com.br</a>
         </div>
       </div>
     </div>
 
-    <!-- Sexto Conteúdo -->
-    <div class="container-fluid c6">
-      <div id="mapa">
+    <!-- Quinto Conteúdo -->
+    <div class="container-fluid de-c5">
 
-      </div>
     </div>
+
+
   </div>
 
   <!-- Rodapé para mobile -->
@@ -342,17 +453,6 @@
       }
   </script>
 
-  <!-- Script do Google Maps -->
-  <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('mapa'), {
-          center: {lat: 20.20225, lng: 40.23309},
-          zoom: 8
-        });
-      }
-  </script>
-
   <!-- Script para habilitar as animações de fade -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
@@ -412,6 +512,66 @@
       !function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
   </script>
 
+  <!-- Script do slider -->
+  <script type="text/javascript">
+
+    window.onload=function(){
+      
+  $(document).ready(function () {
+
+    // Get images.
+    var images = $('.slider > img');
+
+    // Set starting index.
+    var index = images.index($('.active'));
+    $('#counter').text((index + 1) + '/' + images.length);
+
+    $('.slider-botao-proximo').on('click', function () {
+        var currentImg = $('.active');
+        var nextImg = currentImg.next();
+
+        if (nextImg.length) {
+            currentImg.removeClass('active').css('z-index', -1);
+            nextImg.addClass('active').css('z-index', 1);
+
+            // Find the index of the image.
+            var index = images.index(nextImg);
+            $('#counter').text((index + 1) + '/' + images.length);
+        }
+    });
+
+    $('.slider-botao-anterior').on('click', function () {
+        var currentImg = $('.active');
+        var prevImg = currentImg.prev();
+
+        if (prevImg.length) {
+            currentImg.removeClass('active').css('z-index', -1);
+            prevImg.addClass('active').css('z-index', 1);
+
+            // Find the index of the image.
+            var index = images.index(prevImg);
+            $('#counter').text((index + 1) + '/' + images.length);
+        }
+    });
+  });
+
+    }
+
+  </script>
+
+  <!--  Script do Slider 2-->
+  <script>
+      // tell the embed parent frame the height of the content
+      if (window.parent && window.parent.parent){
+        window.parent.parent.postMessage(["resultsFrame", {
+          height: document.body.getBoundingClientRect().height,
+          slug: "e615c0r3"
+        }], "*")
+      }
+  
+      // always overwrite window.name, in case users try to set it manually
+      window.name = "result"
+  </script>
 
   <!-- Scripts do Bootstrap -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

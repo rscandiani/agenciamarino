@@ -38,7 +38,7 @@
     display: inline-block;
 }
 
-.prev, .next{
+.slider-botao-anterior, .slider-botao-proximo{
     cursor: pointer;
 }
   </style>
@@ -47,7 +47,6 @@
   <!-- TODO: Missing CoffeeScript 2 -->
 
   <script type="text/javascript">
-//<![CDATA[
 
     window.onload=function(){
       
@@ -58,9 +57,9 @@ $(document).ready(function () {
 
     // Set starting index.
     var index = images.index($('.active'));
-    $('#counter').text((index + 1) + ' of ' + images.length);
+    $('#counter').text((index + 1) + '/' + images.length);
 
-    $('.next').on('click', function () {
+    $('.slider-botao-proximo').on('click', function () {
         var currentImg = $('.active');
         var nextImg = currentImg.next();
 
@@ -74,7 +73,7 @@ $(document).ready(function () {
         }
     });
 
-    $('.prev').on('click', function () {
+    $('.slider-botao-anterior').on('click', function () {
         var currentImg = $('.active');
         var prevImg = currentImg.prev();
 
@@ -104,9 +103,9 @@ $(document).ready(function () {
 
 <!--  ARROW AND COUNTER  -->
 <div>
- <img src="assets/img/arrow-prev.png" class="prev" alt="Prev Arrow"/>
+ <img src="assets/img/arrow-prev.png" class="slider-botao-anterior" alt="Prev Arrow"/>
  <span id="counter"></span>
- <img src="assets/img/arrow-next.png" class="next" alt="Next Arrow"/>
+ <img src="assets/img/arrow-next.png" class="slider-botao-proximo" alt="Next Arrow"/>
 </div>
 
   
