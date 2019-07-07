@@ -214,7 +214,11 @@ header .container {
 .c3-servicos-lista{
     list-style: none;
     margin-bottom: 20px;
-    }
+}
+
+.c3-servicos-lista-item:hover{
+    transform: scale(1.03);
+}
     
 .c3-titulo-lista{
     font-family: 'Apercu-Bold';

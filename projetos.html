@@ -12,7 +12,7 @@
     <!-- Geral CSS -->
     <link rel="stylesheet" href="./css/geral.css">
     <!-- Linkando o CSS Geral -->
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/projetos.css">
     <!-- Linkando a biblioteca de animações -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
@@ -22,20 +22,20 @@
     <div class="menu-superior-mobile">
       <nav class="navbar">
         <a class="navbar-brand" href="./home.html">
-          <img src="./media/comum/MarinoLogo.png" class="menu-superior-logo" alt="Logo da Agência Marino" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+          <img src="./media/comum/MarinoLogo.png" class="menu-superior-logo" alt="Logo da Agência Marino">
         </a>
-        <span class="menu-superior-botao" onclick="openNavMo()"><img src="./media/comum/Bota-Menu.png" alt="Botão do Menu" data-aos="fade-left"
-          data-aos-offset="500"
-          data-aos-easing="ease-in-sine" data-aos-duration="1000"></span>
+        <span class="menu-superior-botao" onclick="openNavMo()"><img src="./media/comum/Bota-Menu.png" alt="Botão do Menu"></span>
       </nav>
     </div>
 
     <!-- Menu superior desktop -->
     <div class="menu-superior-desktop">
         <nav class="navbar">
-          <a class="navbar-brand" href="./home.html"><img src="./media/comum/MarinoLogo.png" class="menu-superior-logo" alt="Logo da Agência Marino" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="1000"></a>
+          <a class="navbar-brand" href="#"><img src="./media/comum/MarinoLogo.png" class="menu-superior-logo" alt="Logo da Agência Marino"   data-aos="fade-right"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine" data-aos-duration="1000"></a>
 
-          <span class="menu-superior-botao" onclick="openNavDe()"><img src="./media/comum/Bota-Menu.png" alt="Botão do Menu" data-aos="fade-left"
+          <span class="menu-superior-botao" onclick="openNavDe()"><img src="./media/comum/Bota-Menu.png" alt="Botão do Menu"  data-aos="fade-left"
             data-aos-offset="500"
             data-aos-easing="ease-in-sine" data-aos-duration="1000"></span>
         </nav>
@@ -45,7 +45,7 @@
     <div id="myNavMobile" class="mo-menu-sobreposto">
       <!-- Cabeçalho do Menu Sobreposto -->
       <nav class="navbar">
-        <a href="./home.html"><img src="./media/comum/MarinoLogo.png" class="mo-sobreposto-logo" alt="Logo da Agência Marino"></a>
+        <a href="#"><img src="./media/comum/MarinoLogo.png" class="mo-sobreposto-logo" alt="Logo da Agência Marino"></a>
         <a href="javascript:void(0)" class="mo-sobreposto-botao-fechar" onclick="closeNavMo()"><i class="fas fa-times"></i></a>
       </nav>
       <!-- Conteúdo Principal do Menu -->
@@ -79,7 +79,7 @@
       <!-- Cabeçalho -->
       <nav class="navbar de-menu-sobreposto-header">
         <!-- Logo  -->
-        <a href="./home.html"><img src="./media/comum/MarinoLogo.png" class="de-menu-sobreposto-logo" alt="Logo da Agência Marino"></a>
+        <a href="#"><img src="./media/comum/MarinoLogo.png" class="de-menu-sobreposto-logo" alt="Logo da Agência Marino"></a>
         <!-- Botão de fechar -->
         <a href="javascript:void(0)" class="mo-menu-sobreposto-botao-fechar" onclick="closeNavDe()"><i class="fas fa-times"></i></a>
       </nav>
@@ -87,7 +87,7 @@
       <div class="de-menu-sobreposto-conteudo">
           <a href="#"><span class="de-menu-sobreposto-link" >Sobre</span></a>
           <a href="#"><span class="de-menu-sobreposto-link">Serviços</span></a>
-          <a href="./projetos.html"><span class="de-menu-sobreposto-link">Projetos</span></a>
+          <a href="#"><span class="de-menu-sobreposto-link">Projetos</span></a>
           <a href="#"><span class="de-menu-sobreposto-link">Convés</span></a>
           <a href="./contato.html"><span class="de-menu-sobreposto-link">Contato</span></a>
       </div>
@@ -112,9 +112,9 @@
               <h1 class="home-video-titulo" data-aos="fade-up"
               data-aos-duration="2500">O rumo certo para a sua marca</h1>
               <u class="home-video-menu">
-                <li class="home-video-menu-item"><a class="home-video-menu-link" href="#bem-vindo">Sobre a Marino</a></li>
+                <li class="home-video-menu-item"><a class="home-video-menu-link" href="#">Sobre a Marino</a></li>
                 <li class="home-video-menu-item">|</li>
-                <li class="home-video-menu-item"><a class="home-video-menu-link" href="#nossos-projetos">Nossos Projetos</a></li>
+                <li class="home-video-menu-item"><a class="home-video-menu-link" href="#">Nossos Projetos</a></li>
               </u>
             </div>
           </div>
@@ -122,147 +122,7 @@
     </header>
 
     <!-- Primeiro Conteúdo -->
-    <div class="container-fluid c1" id="bem-vindo">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <p class="c1-titulo">Bem-vindo a bordo da Marino!</p>
-          </div>
-          <div class="col-12 col-md-6">
-            <p class="c1-texto">Somos uma agência de gestão de marcas full-service. Nossa tripulação combina rotas de estratégia e criatividade para desenvolver marcas fortes.</p>
-            <br />
-            <a href="#" class="c1-link">Navague conosco</a>     
-          </div>
-        </div>
-    </div>
-      
-    <!-- Segundo Conteúdo -->
-    <div class="container-fluid c2" id="nossos-projetos">
-      <div class="row">
-        <!-- Primeiro Cliente -->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c2-cartao-cliente" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
-          <div class=" col-lg-6 col-xl-7 float-esquerda c2-zoom-in">
-            <a href="https://www.google.com.br" class="c2-cartao-cliente-link"><img src="media/foto1.png" class="c2-cartao-cliente-imagem"></a>
-          </div>
-          <div class="col-lg-6 col-xl-5 float-direita c2-cartao-cliente-chamada-wrap">
-            <p class="c2-cartao-cliente-nome">Selecta</p>
-            <a href="https://www.google.com.br" class="c2-cartao-cliente-chamada">Conectar <br>e Desenvolver</a>
-          </div>
-        </div>
-
-        <!-- Segundo Cliente -->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c2-cartao-cliente" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
-          <div class="col-lg-6 col-xl-7 float-direita c2-zoom-in">
-            <a href="https://www.google.com.br" class="c2-cartao-cliente-link"><img src="media/foto1.png" class="c2-cartao-cliente-imagem"></a>
-          </div>
-          <div class="col-lg-6 col-xl-5 float-esquerda c2-cartao-cliente-chamada-wrap">
-            <p class="c2-cartao-cliente-nome">Kardiah</P>
-            <a href="https://www.google.com.br" class="c2-cartao-cliente-chamada">Studio de Arte<br>e Movimento</a>
-          </div>
-        </div>
-
-        <!-- Terceiro Cliente -->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c2-cartao-cliente" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
-          <div class="col-lg-6 col-xl-7 float-esquerda c2-zoom-in">
-            <a href="https://www.google.com.br" class="c2-cartao-cliente-link"><img src="media/foto1.png" class="c2-cartao-cliente-imagem"></a>
-          </div>
-          <div class="col-lg-6 col-xl-5 float-direita c2-cartao-cliente-chamada-wrap">
-            <p class="c2-cartao-cliente-nome">HEP Idiomas</P>
-            <a class="c2-cartao-cliente-chamada">Don't worry, be HEP</a>
-          </div>
-        </div>
-
-        <!-- Quarto Cliente -->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c2-cartao-cliente" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
-          <div class="col-lg-6 col-xl-7 float-direita c2-zoom-in">
-            <a href="https://www.google.com.br" class="c2-cartao-cliente-link">
-              <img src="media/foto1.png" class="c2-cartao-cliente-imagem">
-            </a>
-          </div>
-          <div class="col-lg-6 col-xl-5 float-esquerda c2-cartao-cliente-chamada-wrap">
-            <p class="c2-cartao-cliente-nome">PRÓ-LARANJA</P>
-            <a class="c2-cartao-cliente-chamada">O Sabor da Natureza<br>na sua mesa</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-      
-    <!-- Terceiro Conteúdo -->
-    <div class="container-fluid c3">
-      <div class="row">
-          <p class="c3-titulo">Estabelecemos rotas para as marcas crescerem e se desenvolverem
-          </p>
-        <div class="col-12 col-sm-12 col-md-6">
-          <div class="c3-gif">
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 c3-servicos">
-          <ul class="c3-servicos-lista">
-            <li class="c3-titulo-lista">Nossos Serviços</li>
-            <li class="c3-servicos-lista-item">→ Estratégia de Marca</li>
-            <li class="c3-servicos-lista-item">→ Naming e Identidade Verbal</li>
-            <li class="c3-servicos-lista-item">→ Identidade Visual da Marca</li>
-            <li class="c3-servicos-lista-item">→ Ambientação Corporativa</li>
-            <li class="c3-servicos-lista-item">→ Papelaria e Promocionais</li>
-            <li class="c3-servicos-lista-item">→ Design Editorial</li>
-            <li class="c3-servicos-lista-item">→ Embalagem e Produto</li>
-            <li class="c3-servicos-lista-item">→ Site e App Mobile</li>
-            <li class="c3-servicos-lista-item">→ Gestão de Redes Sociais</li>
-            <li class="c3-servicos-lista-item">→ Campanhas de Marca</li>
-          </ul>
-          <p class="c3-servicos-link">
-            <a href="./sevicos.html" class="c3-link">Saiba mais</a>
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Quarto Conteúdo -->
-    <div class="container-fluid c4">
-      <div class="row">
-        <!-- Quinto Cliente -->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c2-cartao-cliente" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
-          <div class="col-lg-6 col-xl-7 float-esquerda c2-zoom-in">
-            <a href="https://www.google.com.br" class="c2-cartao-cliente-link">
-              <img src="media/foto1.png" class="c2-cartao-cliente-imagem">
-            </a>
-          </div>        
-          <div class="col-lg-6 col-xl-5 float-direita c2-cartao-cliente-chamada-wrap">
-            <p class="c2-cartao-cliente-nome">1B Music</p>
-            <a class="c2-cartao-cliente-chamada">1Boom de<br>Novas Ideias</a>
-          </div>
-        </div>
-
-        <!-- Sexto Cliente -->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c2-cartao-cliente" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
-          <div class="col-lg-6 col-xl-7 float-direita c2-zoom-in">
-            <a href="https://www.google.com.br" class="c2-cartao-cliente-link">
-                <img src="media/foto1.png" class="c2-cartao-cliente-imagem">
-            </a>
-          </div>        
-          <div class="col-lg-6 col-xl-5 float-esquerda c2-cartao-cliente-chamada-wrap">
-            <p class="c2-cartao-cliente-nome">Bergel Ambiental</p>
-            <a class="c2-cartao-cliente-chamada">Licenciamento e<br>Soluções Ambientas</a>
-          </div>
-        </div>
-
-        <!-- Sétimo Cliente -->
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 c2-cartao-cliente" data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="700">
-          <div class="col-lg-6 col-xl-7 float-esquerda c2-zoom-in">
-              <a href="https://www.google.com.br" class="c2-cartao-cliente-link">
-                <img src="media/foto1.png" class="c2-cartao-cliente-imagem">
-              </a>
-          </div>        
-          <div class="col-lg-6 col-xl-5 float-direita c2-cartao-cliente-chamada-wrap">
-            <p class="c2-cartao-cliente-nome">Previcenter</p>
-            <a class="c2-cartao-cliente-chamada">Encontrar & Amparar</a>
-          </div>
-        </div>
-      </div>
-
-      <div id="c4-link-posicao">
-        <a href="./projetos.html" class="c4-link">Todos os Projetos</a>
-      </div>
+    <div class="container-fluid c-1">
 
     </div>
       
