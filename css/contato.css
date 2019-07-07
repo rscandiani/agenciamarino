@@ -214,6 +214,11 @@ header .container {
     text-decoration: none;
 }
 
+.de-c2-lista-link:hover{
+    color: #181818;
+    text-decoration: none;
+}
+
 .de-c2-coordenadas{
     font-family: 'BerlingskeSerif-DemiBold';
     font-size: 30px;
@@ -271,6 +276,10 @@ header .container {
     left: 30px;
     position: absolute;
     top: 50%;
+}
+
+.direcional-direita:active, .direcional-esquerda:active{
+    transform: scale(0.8);
 }
 
 .slider-botao-anterior, .slider-botao-proximo{
@@ -366,6 +375,12 @@ header .container {
     border-bottom: 1px solid #181818;
 }
 
+.de-c4-link:hover{
+    color: #181818;
+    text-decoration: none;
+    border-bottom: 3px solid #181818;
+}
+
 
 /*********************************************************/
 /******************** Quinto Conteúdo ********************/
@@ -451,7 +466,110 @@ header .container {
   }
 
 
+  /***********************************************************/
+  /******************** Breakpoint 1200px ********************/
+  /***********************************************************/
 
+  @media screen and (min-width: 1200px) {
+
+    header{
+        height: 600px;
+    }
+
+    .de-c1, .de-c2, .de-c3, .de-c4{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    
+  }
+
+
+
+  /***********************************************************/
+  /******************** Breakpoint 1920px ********************/
+  /***********************************************************/
+
+     @media screen and (min-width: 1920px) {
+
+    /******************** Primeiro Conteúdo ********************/
+
+    header{
+        height: 100vh;
+    }
+
+    .de-c1, .de-c2, .de-c3, .de-c4{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
+    .de-c1{
+        margin-top: 150px;
+    }
+
+    .de-c1-titulo{
+        font-size: 62px;
+    }
+
+    #datade, #horade, #diadasemanade{
+        font-size: 24px;
+    }
+
+    .de-c1-subtiutlo{
+        font-size: 38px;
+    }
+
+    /******************** Segundo Conteúdo ********************/
+
+    .de-c2-texto{
+        font-size: 24px;
+    }
+
+    .de-c2-link{
+        font-size: 20px;
+    }
+
+    .de-c2-lista-link{
+        font-size: 22px;
+    }
+
+    .de-c2-coordenadas{
+        font-size: 38px;
+    }
+
+    /******************** Terceiro Conteúdo ********************/
+
+    #counter{
+        font-size: 24px;
+    }
+
+    .slider{
+        height: 700px;
+    }
+
+    .slider-botao-anterior, .slider-botao-proximo{
+        width: 40px;
+        height: 30px;
+    }
+
+    /******************** Quarto Conteúdo ********************/
+
+    .de-c4{
+        margin-bottom: 150px;
+    }
+
+    .de-c4-titulo{
+        font-size: 48px;
+    }
+
+    .de-c4-texto{
+        font-size: 24px;
+    }
+
+    .de-c4-link{
+        font-size: 20px; 
+    }
+
+  }
 
 
 
