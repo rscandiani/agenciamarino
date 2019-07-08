@@ -68,8 +68,6 @@ html{
   .menu-superior-botao{
     color: white;
     cursor:pointer;
-    width: 24px;
-    height: 22px;
   }
 
   .menu-superior-botao:active{
