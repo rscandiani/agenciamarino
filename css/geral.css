@@ -1,6 +1,11 @@
 html{
     scroll-behavior: smooth;
     background-color: #f9f7f3 !important;
+    overflow-x: hidden !important;
+  }
+
+  body{
+    overflow-x: hidden !important;
   }
   
   /************************************************************/
@@ -106,6 +111,10 @@ html{
   .mo-sobreposto-logo{
     width: 115px; 
     height:30px; 
+  }
+
+  .mo-sobreposto-botao-fechar{
+    color: #fff;
   }
   
   .mo-menu-sobreposto-botao-fechar, .mo-menu-sobreposto  {
@@ -256,14 +265,12 @@ html{
     color: #fff;
     font-family: 'Apercu-Regular';
     font-size: 18px;
-    border-bottom: 1px solid #fff;
     width: fit-content;
     padding: 0px !important;
   }
 
   .de-menu-sobreposto-sociais-link:hover{
     color: #fff;
-    border-bottom: 3px solid #fff;
   }
   
   .de-menu-sobreposto-idioma{
@@ -309,8 +316,8 @@ html{
   }
   
   .rodape-fundo{
-    padding: 50px 0 50px 0;
-    width: 100%;
+    padding: 50px 0 0;
+    max-width: 100%;
     background-color: rgba(15, 28, 140, 1);
   }
   
@@ -450,10 +457,7 @@ html{
   /********************************************************/
   /******************** Rodapé Desktop ********************/
   /********************************************************/
-  
-  .rodape-fundo{
-    padding: 50px 10px 20px 10px;
-  }
+
   
   #desktop-rodape-titulo-principal{
     font-family: 'BerlingskeSerif-ExtraBold';
@@ -584,7 +588,7 @@ html{
   }
   
   .desktop-rodape-divisoria{
-    margin: 30px 0 30px 0;
+    margin: 20px 0 20px 0;
   }
   
   .desktop-rodape-avisos{
@@ -667,10 +671,6 @@ html{
       top: 40px;
     }
   
-    .rodape-fundo{
-      padding-left: 40px;
-      padding-right: 40px;
-    }
     .desktop-rodape-titulo{
       margin-bottom: 5px;
     }
