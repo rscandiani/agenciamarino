@@ -70,7 +70,59 @@
 /******************** Desktop ********************/
 
 @media screen and (min-width: 768px) {
-    .projetos-mobile {
+    .projetos-desktop {
         display: none;
     }
 }
+
+.de-c1{
+
+}
+
+.de-c1-cartao-cliente{
+    margin-bottom: 30px;
+}
+    
+.de-c1-zoom-in{
+    overflow: hidden;
+}
+    
+.de-c1-cartao-cliente-link{
+    cursor: pointer;
+}
+    
+.de-c1-cartao-cliente-imagem{
+    transition: 0.5s ease;
+    width: 100%;
+}
+    
+.de-c1-cartao-cliente-imagem:hover{
+    transform: scale(1.2);
+}
+    
+.de-c1-cartao-cliente-chamada-wrap{
+    margin-top: 10px;
+}
+
+.de-c1-cartao-cliente-nome{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Apercu-Regular';
+    margin-bottom: 5px;
+}
+    
+.de-c1-cartao-cliente-chamada{
+    font-family: 'BerlingskeSerif-ExtraBold';
+    color: #181818;
+    text-decoration: none;
+    font-size: 30px;
+    line-height: 32px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+    
+.de-c1-cartao-cliente-chamada:hover{
+    color: #181818;
+    text-decoration: none;
+}
+
