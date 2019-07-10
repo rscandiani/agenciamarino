@@ -59,6 +59,7 @@ html{
     z-index: 3;
     position: absolute;
     width: 100%;
+    overflow-x: hidden;
   }
   
   .navbar{
@@ -631,6 +632,10 @@ html{
   /**********************************************************/
   
   @media screen and (min-width: 768px) {
+
+    .navbar{
+      padding: 50px 40px 50px 40px;
+    }
   
     .mobile-lista-avisos{
         justify-content: right;
