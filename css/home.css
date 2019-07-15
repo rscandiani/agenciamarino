@@ -102,6 +102,7 @@ header .container {
     line-height: 1.2;
     color: white;
     margin-bottom: 30px;
+    padding-right: 0px;
     }
     
 .c1-texto{
@@ -229,9 +230,15 @@ header .container {
 .c3-titulo-lista{
     font-family: 'Apercu-Bold';
     color: #0f1c8c;
-    font-size: 1rem;
+    font-size: 20px;
     }
     
+.c3-servicos-lista{
+    font-family: 'Apercu-Regular';
+    font-size: 18px;
+    color: #181818;
+}
+
 .c3-servicos-link{
     padding-left: 40px;
     }
@@ -241,7 +248,7 @@ header .container {
     color: #000000;
     border-bottom: 1px #000000 solid;
     font-family: 'Apercu-Regular';
-    font-size: 1.125rem;
+    font-size: 18px;
     }
     
 .c3-link:hover{
@@ -316,6 +323,10 @@ header .container {
     .c1, .c2, .c3, .c4{
         padding-left: 40px;
         padding-right: 40px;
+    }
+
+    .c1-titulo{
+        padding-right: 10px;
     }
 
     .c2{

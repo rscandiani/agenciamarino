@@ -21,6 +21,8 @@ html,body{
 }
 
 .mo-c1{
+    padding-left: 30px;
+    padding-right: 30px;
 
 }
 
@@ -69,6 +71,11 @@ html,body{
 .mo-c1-cartao-cliente-chamada:hover{
     color: #181818;
     text-decoration: none;
+}
+
+.mo-c1-servicos-chamada{
+    position: relative;
+    top: 30%;
 }
 
 .mo-c1-servicos-chamada-texto{
@@ -185,4 +192,30 @@ html,body{
     .mo-c1-botao-posicao{
         margin-bottom: 100px;
     }
+}
+
+/***********************************************************/
+/******************** 1200px Breakpoint ********************/
+/***********************************************************/
+
+@media screen and (min-width: 1200px) {
+
+    .mo-c1{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+}
+
+/***********************************************************/
+/******************** 1920px Breakpoint ********************/
+/***********************************************************/
+
+@media screen and (min-width: 1920px) {
+
+    .mo-c1{
+        padding-left: 200px;
+        padding-right: 200px;
+    }
+
 }
