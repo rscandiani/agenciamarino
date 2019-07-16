@@ -91,7 +91,7 @@ header .container {
   /***********************************************************/
   
 .c1{
-    background-color: rgba(15, 28, 140, 1);
+    background-color: #293277;
     padding-top: 50px;
     padding-bottom: 50px;
     }
@@ -154,7 +154,7 @@ header .container {
     }
     
 .c2-cartao-cliente-chamada-wrap{
-    margin-top: 12%;
+    margin-top: 10px;
     padding-left: 0px;
     }
     
@@ -181,7 +181,7 @@ header .container {
     }
 
     .c2-cartao-cliente{
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
         
     .c2-zoom-in{
@@ -195,11 +195,16 @@ header .container {
 /******************** Terceiro conteúdo ********************/
 /***********************************************************/
     
+.c3{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
 .c3-titulo{
     font-family: 'BerlingskeSerif-ExtraBold';
     font-size: 38px;
     line-height: 1.2;
-    text-align: center;
+    text-align: left;
     margin-bottom: 30px;
     color: #02024f;
     }
@@ -221,6 +226,7 @@ header .container {
 .c3-servicos-lista{
     list-style: none;
     margin-bottom: 20px;
+    padding-inline-start: 0px;
 }
 
 .c3-servicos-lista-item:hover{
@@ -236,17 +242,17 @@ header .container {
 .c3-servicos-lista{
     font-family: 'Apercu-Regular';
     font-size: 18px;
-    color: #181818;
+    color: #02024f;
 }
 
 .c3-servicos-link{
-    padding-left: 40px;
+    margin-bottom: 0px;
     }
     
 .c3-link{
     text-align: center;
-    color: #000000;
-    border-bottom: 1px #000000 solid;
+    color: #02024f;
+    border-bottom: 1px #02024f solid;
     font-family: 'Apercu-Regular';
     font-size: 18px;
     }
@@ -307,6 +313,18 @@ header .container {
         margin-bottom: 50px
     }
 
+    .c3-servicos-lista{
+        font-size: 20px;
+    }
+
+    .c3-link{
+        font-size: 20px;;
+    }
+
+    .c4-link{
+        font-size: 20px;
+    }
+
 }
 
 
@@ -365,6 +383,7 @@ header .container {
     }
 
     .c2-cartao-cliente-chamada-wrap{
+        margin-top: 10%;
         padding-left: 10px;
     }
 
@@ -502,7 +521,7 @@ header .container {
     }
 
     .c3-servicos-lista, .c3-servicos-link{
-        padding-inline-start: 150px;
+        padding-inline-start: 100px;
     }
 
     .c3-titulo-lista{

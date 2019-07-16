@@ -15,14 +15,22 @@
     <link rel="stylesheet" href="./css/home.css">
     <!-- Linkando a biblioteca de animações -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Script de abrir e fechar o menu-->
+    <script async src="./js/menuopener.js"></script>
+    <script defer src="./js/menuopener.js"></script>
+    <!-- Script para habilitar as animações de fade -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script das animações -->
+    <script async src="./js/aoslibrary.js"></script>
+    <script defer src="./js/aoslibrary.js"></script>
   </head>
-  <body style="background-color: #f9f7f3;">
+  <body style="background-color: #F9F6F2;">
 
     <!-- Menu superior mobile -->
     <div class="menu-superior-mobile">
       <nav class="navbar">
         <a class="navbar-brand" href="./home.html">
-          <img src="./media/comum/MarinoLogo.png" class="menu-superior-logo" alt="Logo da Agência Marino" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+          <img src="./media/MarinoLogo.svg" class="menu-superior-logo" alt="Logo da Agência Marino" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="1000">
         </a>
         <span class="menu-superior-botao" onclick="openNavMo()"><img src="./media/comum/Bota-Menu.png" alt="Botão do Menu" data-aos="fade-left"
           data-aos-offset="500"
@@ -45,31 +53,31 @@
     <div id="myNavMobile" class="mo-menu-sobreposto">
       <!-- Cabeçalho do Menu Sobreposto -->
       <nav class="navbar">
-        <a href="./home.html"><img src="./media/comum/MarinoLogo.png" class="mo-sobreposto-logo" alt="Logo da Agência Marino"></a>
+        <a href="./home.html"><img src="./media/MarinoLogo.svg" class="mo-sobreposto-logo" alt="Logo da Agência Marino"></a>
         <a href="javascript:void(0)" class="mo-sobreposto-botao-fechar" onclick="closeNavMo()"><i class="fas fa-times"></i></a>
       </nav>
       <!-- Conteúdo Principal do Menu -->
       <div class="mo-menu-sobreposto-conteudo">
-        <a href="./sobre.html" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1100">Sobre</a>
-        <a href="./servicos.html" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1200">Serviços</a>
-        <a href="./projetos.html" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1300">Projetos</a>
-        <a href="./conves.html" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1400">Convés</a>
-        <a href="./contato.html" class="mo-sobreposto-conteudo-link" data-aos="fade-right" data-aos-easing="ease-in-sine" data-aos-duration="1500">Contato</a>
+        <a href="./sobre.html" class="mo-sobreposto-conteudo-link">Sobre</a>
+        <a href="./servicos.html" class="mo-sobreposto-conteudo-link">Serviços</a>
+        <a href="./projetos.html" class="mo-sobreposto-conteudo-link">Projetos</a>
+        <a href="./conves.html" class="mo-sobreposto-conteudo-link">Convés</a>
+        <a href="./contato.html" class="mo-sobreposto-conteudo-link">Contato</a>
       </div>
-      <!-- Troca de Idioma -->
+      <!-- Troca de Idioma
       <div class="mo-menu-sobreposto-idioma">
         <ul class="mo-menu-sobreposto-idioma-lista">
           <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link botao-ativo">PT</a></li>
           <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link">|</a></li>
           <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link">EN</a></li>
         </ul>
-      </div>
+      </div>-->
       <!-- Redes Sociais -->
       <div class="mo-menu-sobreposto-sociais">
           <ul class="mo-menu-sobreposto-sociais-lista">
-            <li><a href="https://www.instagram.com/agenciamarino/" class="mo-menu-sobreposto-sociais-lista-link">instagram</a></li>
-            <li><a href="https://www.facebook.com/agenciamarino/" class="mo-menu-sobreposto-sociais-lista-link">facebook</a></li>
-            <li><a href="#" class="mo-menu-sobreposto-sociais-lista-link">whatsapp</a></li>
+            <li><a href="https://www.instagram.com/agenciamarino/" class="mo-menu-sobreposto-sociais-lista-link">Instagram</a></li>
+            <li><a href="https://www.facebook.com/agenciamarino/" class="mo-menu-sobreposto-sociais-lista-link">Facebook</a></li>
+            <li><a href="#" class="mo-menu-sobreposto-sociais-lista-link">Whatsapp</a></li>
           </ul>
         </div>
     </div>
@@ -85,11 +93,11 @@
       </nav>
       <!-- Conteúdo Principal -->
       <div class="de-menu-sobreposto-conteudo">
-          <a href="./sobre.html"><span class="de-menu-sobreposto-link" >Sobre</span></a>
-          <a href="./servicos.html"><span class="de-menu-sobreposto-link">Serviços</span></a>
-          <a href="./projetos.html"><span class="de-menu-sobreposto-link">Projetos</span></a>
-          <a href="./conves.html"><span class="de-menu-sobreposto-link">Convés</span></a>
-          <a href="./contato.html"><span class="de-menu-sobreposto-link">Contato</span></a>
+          <a href="./sobre.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link" >Sobre</span></a>
+          <a href="./servicos.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link">Serviços</span></a>
+          <a href="./projetos.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link">Projetos</span></a>
+          <a href="./conves.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link">Convés</span></a>
+          <a href="./contato.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link">Contato</span></a>
       </div>
       <!-- Sociais -->
       <div class="de-menu-sobreposto-sociais">
@@ -261,7 +269,7 @@
       </div>
 
       <!-- Botão de mais Projetos -->
-      <div id="c4-link-posicao">
+      <div id="c4-link-posicao"  data-aos="fade-up" data-aos-easing="ease-in-sine" data-aos-duration="900">
         <a href="./projetos.html" class="c4-link">Ver todos os projetos</a>
       </div>
 
@@ -405,50 +413,6 @@
         </div>
       </div>
     </div>
-
-    <!-- Abrir e fechar o menu sobreposto mobile -->
-    <script>
-    function openNavMo() {
-      document.getElementById("myNavMobile").style.width = "100%";
-    }
-
-    function closeNavMo() {
-      document.getElementById("myNavMobile").style.width = "0%";
-    }
-    </script>
-
-    <!-- Abrir e fechar o menu sobreposto desktop -->
-    <script>
-        function openNavDe() {
-          document.getElementById("myNavDesktop").style.width = "100%";
-        }
-        
-        function closeNavDe() {
-          document.getElementById("myNavDesktop").style.width = "0%";
-        }
-    </script>
-
-    <!-- Script para habilitar as animações de fade -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Script para iniciar as animações de fade -->
-    <script>
-      AOS.init();
-    </script>
-
-    <!-- Botão active -->
-    <script>
-      // Add active class to the current button (highlight it)
-      var header = document.getElementById("de-menu-sobreposto-idioma" , "mo-menu-sobreposto-idioma");
-      var btns = header.getElementByClassName("de-menu-sobreposto-idioma-link" , "mo-menu-sobreposto-idioma-lista-link");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function() {
-        var current = document.getElementsByClassName("botao-ativo");
-        current[0].className = current[0].className.replace(" botao-ativo", "");
-        this.className += " botao-ativo";
-        });
-      }
-    </script>
 
     <!-- Scripts do Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

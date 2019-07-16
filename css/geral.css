@@ -1,6 +1,5 @@
 html{
     scroll-behavior: smooth;
-    background-color: #f9f7f3 !important;
     overflow-x: hidden !important;
   }
 
@@ -94,7 +93,6 @@ html{
     height: 24px;
     cursor: pointer;
   }
-  
   
   /****************************************************************/
   /******************** Menu sobreposto mobile ********************/
@@ -205,7 +203,7 @@ html{
     position: relative;
     width:100%;
     text-align: center;
-    top:25%;
+    top:35%;
     }
   
   /*****************************************************************/
@@ -240,6 +238,10 @@ html{
   text-align: left;
   left:80px;
   }
+
+  .de-menu-sobreposto-conteudo-item{
+      padding: 0px !important;
+  }
   
   .overlay-desktop a {
   padding: 8px;
@@ -252,7 +254,6 @@ html{
   color: #fff;
   font-family: 'Apercu-Regular';
   font-size: 40px;
-  border-bottom: 1px solid #fff;
   width: fit-content;
   padding: 0px !important;
   }
@@ -266,7 +267,7 @@ html{
   position: relative;
   width:100%;
   text-align: left;
-  top:10%;
+  top:15%;
   left: 80px;
   }
   
@@ -334,7 +335,7 @@ html{
   .rodape-fundo{
     padding: 50px 0 0;
     max-width: 100%;
-    background-color: rgba(15, 28, 140, 1);
+    background-color: #0F1C8C;
   }
   
   #ro-titulo{
@@ -350,7 +351,7 @@ html{
   
   #ro-email-titulo{
     font-family: 'Apercu-Bold';
-    font-size: 14px;
+    font-size: 18px;
     color: #1F5DCC;
     margin-bottom: 0px;
   }
@@ -421,7 +422,7 @@ html{
   
   .mobile-rodape-menu-titulo{
     font-family: 'Apercu-Bold';
-    font-size: 14px;
+    font-size: 18px;
     color: #1F5DCC;
     margin-bottom: 0px;
   }
@@ -452,8 +453,7 @@ html{
   }
   
   .mobile-avisos-link{
-    border-bottom: 1px solid #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Apercu-Regular';
   }
   
@@ -486,7 +486,7 @@ html{
     font-family: 'Apercu-Bold';
     font-size: 14px;
     color: #1F5DCC;
-    margin-bottom: 0px;
+    margin-bottom: 5px;
   }
   
   .desktop-rodape-lista{
@@ -500,7 +500,6 @@ html{
     font-size: 14px;
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #fff;
   }
   
   .desktop-rodape-menu-item:hover{
@@ -514,6 +513,7 @@ html{
     display: inline-flex;
     list-style: none;
     margin-bottom: 5px;
+    margin-top: 5px; 
   }
   
   .desktop-rodape-item-sociais{
@@ -692,9 +692,18 @@ html{
     }
   
     .desktop-rodape-titulo{
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .desktop-rodape-lista-item{
       margin-bottom: 5px;
     }
   
+    .desktop-rodape-menu-item{
+      font-size: 18px;
+    }
+
     .desktop-rodape-item-sociais{
       width: 43px;
       height: 40px;
@@ -763,15 +772,30 @@ html{
     .skype:hover{
       background-image: url(../media/sociaishover/skype-hover-40.png)
     }
+
+    .desktop-rodape-texto{
+      font-size: 18px;
+    }
   
     .desktop-rodape-avisos a{
-      border-bottom: 1px solid #fff;
+      font-size: 16px;
       text-decoration: none;
     }
   
     .desktop-rodape-avisos a:hover{
-      border-bottom: 3px solid #fff;
       text-decoration: none;
+    }
+
+    .desktop-rodape-avisos-divisoria{
+      padding-left: 10px;
+      padding-right: 10px;
+      font-size: 18px;
+      font-family: 'Apercu-Regular';
+    }
+
+    .desktop-rodape-marino{
+      font-family: 'Apercu-Regular';
+      font-size: 14px;
     }
   
     }
