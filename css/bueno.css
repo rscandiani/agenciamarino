@@ -3,7 +3,7 @@
 /***************************************************/
 
 .c1{
-    background-color: #EA5C24;
+    background-color: #98d3bf;
     height: 450px;
     padding-top: 200px;
 }
@@ -11,13 +11,13 @@
 .c1-titulo{
     font-family: 'BerlingskeSerif-Bold';
     font-size: 30px;
-    color: #F5F5F5;
+    color: #22345f;
     margin-bottom: 30px;
 }
 
 .c1-lista{
     font-family: 'Apercu-Regular';
-    color: #fff;
+    color: #22345f;
     list-style: none;
     padding-left: 0px;
 }
@@ -63,14 +63,14 @@
 .c3-titulo{
     font-family: 'BerlingskeSerif-Bold';
     font-size: 38px;
-    color: #EA5C24;
+    color: #22345f;
     line-height: 1.2;
 }
 
 .c3-texto{
     font-family: 'Apercu-Regular';
     font-size: 20px;
-    color: #EA5C24;
+    color: #22345f;
     line-height: 1.4;
 }
 
@@ -95,14 +95,14 @@
 .c5-titulo{
     font-family: 'BerlingskeSerif-Bold';
     font-size: 38px;
-    color: #EA5C24;
+    color: #22345f;
     line-height: 1.2;
 }
 
 .c5-texto{
     font-family: 'Apercu-Regular';
     font-size: 20px;
-    color: #EA5C24;
+    color: #22345f;
     line-height: 1.4;
 }
 

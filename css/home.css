@@ -91,7 +91,7 @@ header .container {
   /***********************************************************/
   
 .c1{
-    background-color: #293277;
+    background-color: #0f1c8c;
     padding-top: 50px;
     padding-bottom: 50px;
     }
@@ -147,6 +147,7 @@ header .container {
 .c2-cartao-cliente-imagem{
     transition: 0.5s ease;
     width: 100%;
+    height: auto;
     }
     
 .c2-cartao-cliente-imagem:hover{
@@ -382,8 +383,12 @@ header .container {
         margin-bottom: 75px;
     }
 
+    .c2-cartao-cliente-imagem{
+        height: 400px;
+    }
+
     .c2-cartao-cliente-chamada-wrap{
-        margin-top: 10%;
+        margin-top: 18%;
         padding-left: 10px;
     }
 
@@ -456,6 +461,10 @@ header .container {
 
     .c2-cartao-cliente{
         margin-bottom: 100px;
+    }
+
+    .c2-cartao-cliente-imagem{
+        height: 500px;
     }
 
     .c2-cartao-cliente-nome{
@@ -571,6 +580,10 @@ header .container {
         margin-top: 200px;
     }
 
+    .c2-cartao-cliente-chamada-wrap{
+        margin-top: 12%;
+    }
+
     .c2-cartao-cliente{
         padding: 0px;
     }
@@ -613,3 +626,5 @@ header .container {
     }
 
 }
+
+

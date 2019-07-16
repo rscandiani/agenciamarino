@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Cliente - Playoffs</title>
+    <!-- Font Aweasome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <!-- Linkando o Bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Linkando o CSS Geral -->
+    <link rel="stylesheet" href="./css/geral.css">
+    <!-- Linkando o CSS Contato -->
+    <link rel="stylesheet" href="./css/playoffs.css">
+    <!-- Linkando a biblioteca de animações -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Script de abrir e fechar o menu-->
+    <script async src="./js/menuopener.js"></script>
+    <script defer src="./js/menuopener.js"></script>
+    <!-- Script para habilitar as animações de fade -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script de abrir e fechar o menu-->
+    <script async src="./js/aoslibrary.js"></script>
+    <script defer src="./js/aoslibrary.js"></script>
+    <!-- Script para mostrar a data -->
+    <script async src="./js/displaydate.js"></script>
+    <script defer src="./js/displaydate.js"></script>
+    <!-- Script para mostrar a hora -->
+    <script async src="./js/weatherdisplay.js"></script>
+    <script defer src="./js/weatherdisplay.js"></script>
+    <!-- Script para mostrar a hora -->
+    <script async src="./js/slider.js"></script>
+    <script defer src="./js/slider.js"></script>
+  </head>
+  <body style="background-color:#F9F6F2;">
+
+    <!-- Menu superior mobile -->
+    <div class="menu-superior-mobile">
+      <nav class="navbar">
+        <a class="navbar-brand" href="./home.html">
+          <img src="./media/MarinoLogo.svg" class="menu-superior-logo" alt="Logo da Agência Marino" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="1000">
+        </a>
+        <span class="menu-superior-botao" onclick="openNavMo()"><img src="./media/comum/Bota-Menu.png" alt="Botão do Menu" data-aos="fade-left"
+          data-aos-offset="500"
+          data-aos-easing="ease-in-sine" data-aos-duration="1000"></span>
+      </nav>
+    </div>
+
+    <!-- Menu superior desktop -->
+    <div class="menu-superior-desktop">
+        <nav class="navbar">
+          <a class="navbar-brand" href="./home.html"><img src="./media/MarinoLogo.svg" class="menu-superior-logo" alt="Logo da Agência Marino" data-aos="fade-right" data-aos-offset="500" data-aos-easing="ease-in-sine" data-aos-duration="1000"></a>
+
+          <span class="menu-superior-botao" onclick="openNavDe()"><img src="./media/comum/Bota-Menu.png" alt="Botão do Menu" data-aos="fade-left"
+            data-aos-offset="500"
+            data-aos-easing="ease-in-sine" data-aos-duration="1000"></span>
+        </nav>
+    </div>
+
+    <!-- Menu sobreposto mobile -->
+    <div id="myNavMobile" class="mo-menu-sobreposto">
+      <!-- Cabeçalho do Menu Sobreposto -->
+      <nav class="navbar">
+        <a href="./home.html"><img src="./media/MarinoLogo.svg" class="mo-sobreposto-logo" alt="Logo da Agência Marino"></a>
+        <a href="javascript:void(0)" class="mo-sobreposto-botao-fechar" onclick="closeNavMo()"><i class="fas fa-times"></i></a>
+      </nav>
+      <!-- Conteúdo Principal do Menu -->
+      <div class="mo-menu-sobreposto-conteudo">
+        <a href="./sobre.html" class="mo-sobreposto-conteudo-link">Sobre</a>
+        <a href="./servicos.html" class="mo-sobreposto-conteudo-link">Serviços</a>
+        <a href="./projetos.html" class="mo-sobreposto-conteudo-link">Projetos</a>
+        <a href="./conves.html" class="mo-sobreposto-conteudo-link">Convés</a>
+        <a href="./contato.html" class="mo-sobreposto-conteudo-link">Contato</a>
+      </div>
+      <!-- Troca de Idioma
+      <div class="mo-menu-sobreposto-idioma">
+        <ul class="mo-menu-sobreposto-idioma-lista">
+          <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link botao-ativo">PT</a></li>
+          <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link">|</a></li>
+          <li><a href="#" class="mo-menu-sobreposto-idioma-lista-link">EN</a></li>
+        </ul>
+      </div>-->
+      <!-- Redes Sociais -->
+      <div class="mo-menu-sobreposto-sociais">
+          <ul class="mo-menu-sobreposto-sociais-lista">
+            <li><a href="https://www.instagram.com/agenciamarino/" class="mo-menu-sobreposto-sociais-lista-link">Instagram</a></li>
+            <li><a href="https://www.facebook.com/agenciamarino/" class="mo-menu-sobreposto-sociais-lista-link">Facebook</a></li>
+            <li><a href="#" class="mo-menu-sobreposto-sociais-lista-link">Whatsapp</a></li>
+          </ul>
+        </div>
+    </div>
+
+    <!-- Menu sobreposto desktop -->
+    <div id="myNavDesktop" class="overlay-desktop de-menu-sobreposto">
+        <!-- Cabeçalho -->
+        <nav class="navbar de-menu-sobreposto-header">
+          <!-- Logo  -->
+          <a href="./home.html"><img src="./media/comum/MarinoLogo.png" class="de-menu-sobreposto-logo" alt="Logo da Agência Marino"></a>
+          <!-- Botão de fechar -->
+          <a href="javascript:void(0)" class="mo-menu-sobreposto-botao-fechar" onclick="closeNavDe()"><i class="fas fa-times"></i></a>
+        </nav>
+        <!-- Conteúdo Principal -->
+        <div class="de-menu-sobreposto-conteudo">
+            <a href="./sobre.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link" >Sobre</span></a>
+            <a href="./servicos.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link">Serviços</span></a>
+            <a href="./projetos.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link">Projetos</span></a>
+            <a href="./conves.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link">Convés</span></a>
+            <a href="./contato.html" class="de-menu-sobreposto-conteudo-item"><span class="de-menu-sobreposto-link">Contato</span></a>
+        </div>
+        <!-- Sociais -->
+        <div class="de-menu-sobreposto-sociais">
+          <a href="https://www.instagram.com/agenciamarino/" target="_blank"><span class="de-menu-sobreposto-sociais-link">instagram</span></a>
+          <a href="https://www.facebook.com/agenciamarino/" target="_blank"><span class="de-menu-sobreposto-sociais-link">facebook</span></a>
+          <a href="#" target="_blank"><span class="de-menu-sobreposto-sociais-link">whatsapp</span></a>
+  
+          <a href="tel:+552721417205"><span class="de-menu-sobreposto-sociais-link">+55 27 2141-7205</span></a>
+          <a href="mailto:contato@agenciamarino.com.br" target="_blank"><span class="de-menu-sobreposto-sociais-link">contato@agenciamarino.com.br</span></a>
+        </div>
+    </div>
+
+    <!-- Banner Primeiro Conteúdo -->
+    <div class="container-fluid c1">
+        <div class="row">
+            <div class="col-12">
+                <p class="c1-titulo">Playoffs</p>
+            </div>
+            <div class="col-6">
+                <ul class="c1-lista">
+                    <li>Estratégia</li>
+                    <li>Identidade Verbal</li>
+                    <li>Identidade Visual</li>
+                    <li>Ambientação Corporativa</li>
+                </ul>
+            </div>
+            <div class="col-6">
+                    <ul class="c1-lista">
+                        <li>Material Promocional</li>
+                        <li>Cardápio</li>
+                        <li>Uniformes</li>
+                        <li>Redes Sociais</li>
+                    </ul>
+                </div>
+        </div>
+    </div>
+
+    <!-- Imagem Destaque Segundo Conteúdo -->
+    <div class="c2">
+        <img src="./media/projetos/clientes/playoffs/c2-banner.png" class="c2-imagem-destaque">
+    </div>
+
+    <!-- Terceiro Conteúdo -->
+    <div class="container-fluid c3">
+        <div class="row">
+            <div class="col-12">
+                <p class="c3-titulo">Crazy ‘bout sports, 
+                        burgers and beer</p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p class="c3-texto">O Playoffs funciona como sportbar à noite e restaurante durante dia. O espaço faz transmissões de partidas de futebol americano, basquete e outros esportes pouco tradicionais na Grande Vitória, priorizando os torneios internacionais.  </p>
+            </div>
+            <div class="col-12 col-lg-6">
+              <p class="c3-texto">A Marino desenvolveu todo o sistema de identidade da marca desde o nascimento do negócio. Da fachada aos nomes dos pratos, tudo foi pensado para promover o encontro entre pessoas apaixonadas por esporte e por comida. </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Quarto Conteúdo -->
+    <div class="container-fluid c4">
+        <img src="./media/projetos/clientes/playoffs/c4-imagem-destaque.png" class="c4-imagem">
+    </div>
+
+    <!-- Quinto Conteúdo -->
+    <div class="container-fluid c5">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <p class="c5-titulo">Irish Ale House<br>
+                        Burgers<br>
+                        Sport Bar<br>
+                        Grill<br>
+                        Restaurant
+                        </p>
+            </div>
+              <div class="col-12 col-md-6 col-lg-6">
+                  <p class="c5-texto">A marca reflete o conceito desde a origem do próprio nome "PLAYOFFS", que é uma etapa presente em todos os campeonatos esportivos internacionais. Toda a comunicação faz referência a esse público internacional, descontraído, jovem e amante do esporte. </p>
+
+                  <p class="c5-texto">Presente desde o projeto arquitetônico, a Marino foi responsável da fachada do estabelecimento, que faz alusão aos estabelecimentos americanos e irlandeses, até ao desenvolvimento de uma identidade verbal que fosse coerente com a gráfica, nomeando os pratos com nomes esportivos, por exemplo.</p> 
+              </div>
+        </div>
+    </div>
+
+    <!-- Sexto Conteúdo -->
+    <div class=" container-fluid c6">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img src="./media/projetos/clientes/playoffs/c6-imagem-esquerda.png" class="c6-imagem">
+            </div>
+            <div class="col-12 col-md-6">
+                <img src="./media/projetos/clientes/playoffs/c6-imagem-direita.png" class="c6-imagem">
+            </div>
+        </div>
+    </div>
+
+    <!-- Slider Sétimo Conteúdo -->
+    <div class="container-fluid c7">
+      <!--  Contador  -->
+      <div class="contador">
+          <span id="counter"></span>
+      </div>
+      
+      <!-- Slider -->
+      <div class="slider-wrap">
+        <!-- Direcional Esquerda -->
+        <div class="direcional-esquerda">
+          <img src="./media/contato/contato-slider-proxima.png" class="slider-botao-proximo" alt="Next Arrow">
+        </div>
+
+        <!-- Direcional Direita -->
+        <div class="direcional-direita">
+          <img src="./media/contato/contato-slider-anterior.png" class="slider-botao-anterior" alt="Next Arrow">
+        </div>
+
+        <!-- Imagens -->
+        <div class="slider">
+          <img src="./media/projetos/clientes/playoffs/c7-1.png" class="active"/>
+          <img src="./media/projetos/clientes/playoffs/c7-2.png" />
+          <img src="./media/projetos/clientes/playoffs/c7-3.png" />
+          <img src="./media/projetos/clientes/playoffs/c7-4.png" />
+          <img src="./media/projetos/clientes/playoffs/c7-5.png" />
+          <img src="./media/projetos/clientes/playoffs/c7-6.png" />
+          <img src="./media/projetos/clientes/playoffs/c7-7.png" />
+          <img src="./media/projetos/clientes/playoffs/c7-8.png" />
+        </div>
+      </div>
+    </div>
+
+    <!-- Oitavo Conteúdo -->
+    <div class="container-fluid c8">
+        <div class="row">
+                <p class="col-12 c8-titulo">Veja também</p>
+
+                <div class="col-12 col-md-4 col-lg-4 c8-event-card-cliente">
+                    <div><a href="./kardiah.html"><img src="./media/projetos/clientes/kardiah/kardiah-thumbnail.png" class="c8-veja-mais-cliente"></a></div>
+                    <p class="c8-event-card-cliente-nome">Kardiah</p>
+                    <a href="./kardiah.html"><p class="c8-event-card-cliente-chamada">Studio de Arte e Movimento</p></a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 c8-event-card-cliente">
+                    <div><a href="./carol.html"><img src="./media/projetos/clientes/carol/c2-banner-destaque.png" class="c8-veja-mais-cliente"></a></div>
+                    <p class="c8-event-card-cliente-nome">Carol Dutra Coach</p>
+                    <a href="./carol.html"><p class="c8-event-card-cliente-chamada">Coach de Carreira e de Qualidade de Vida</p></a>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 c8-event-card-cliente">
+                    <div><a href="./selecta.html"><img src="./media/projetos/clientes/selecta/c2-banner-destaque.png"  class="c8-veja-mais-cliente"></a></div>
+                    <p class="c8-event-card-cliente-nome">Selecta</p>
+                    <a href="./selecta.html"><p class="c8-event-card-cliente-chamada">Conectar e Desenvolver</p></a>
+                </div>
+        </div>
+    </div>
+
+    <!-- Rodapé para mobile -->
+    <div  class="rodape-fundo rodape-mobile">
+        <div class="container-fluid">
+          <p id="ro-titulo">Toca o barco</p>
+          <!-- Conteúdo principal -->
+          <div class="row">
+            <!-- Seção Newsletter -->
+            <div class="col-12" id="ro-email">
+              <p id="ro-email-titulo">Newsletter</p>
+              <p id="ro-email-subtitulo">Carta Marino</p>
+              <form action="mailto:ricardoscandiani@gmail.com" method="post" enctype="text/plain">
+                <div class="inputWithIcon">
+                  <input type="text" placeholder="Digite seu e-mail">
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </form>
+            </div>
+            <!-- Seção Menu -->
+            <div class="col-6">
+                <ul class="ro-sociais-lista">
+                  <li class="mobile-rodape-menu-titulo">Marino</li>
+                  <li><a href="./sobre.html" class="ro-sociais-lista-item">Sobre</a></li>
+                  <li><a href="./servicos.html" class="ro-sociais-lista-item">Serviços</a></li>
+                  <li><a href="./projetos.html" class="ro-sociais-lista-item">Projetos</a></li>
+                  <li><a href="./conves.html" class="ro-sociais-lista-item">Convés</a></li>
+                  <li><a href="./contato.html" class="ro-sociais-lista-item">Contato</a></li>
+                </ul>
+            </div>
+            <!-- Seção Sociais -->
+            <div class="col-6">
+              <ul class="ro-sociais-lista">
+                <li class="mobile-rodape-menu-titulo">Redes</li>
+                <li><a href="https://www.instagram.com/agenciamarino/" class="ro-sociais-lista-item">Instagram</a></li>
+                <li><a href="https://www.facebook.com/agenciamarino/" class="ro-sociais-lista-item">Facebook</a></li>
+                <li><a href="https://www.google.com.br" class="ro-sociais-lista-item">WhatsApp</a></li>
+              </ul>
+            </div>
+          </div>
+          <!-- Divisória Rodapé -->
+          <div>
+            <p style="border-top: 2px #1F5DCC solid; margin: 15px 0 15px 0;"></p>
+          </div>
+          <!-- Avisos Legais -->
+          <div class="row">
+            <u class=" col-12 col-md-6 mobile-lista-avisos" >
+              <li><a class="mobile-avisos-link">Termos de uso</a></li>
+              <li class="mobile-lista-divisoria">|</li>
+              <li><a class="mobile-avisos-link">Politicas de privacidade</a></li>
+            </u>
+            <span class="col-12 col-md-6 mobile-lista-avisos">
+              <p><a class="mobile-avisos-link">© 2019 Agência Marino. Todos os direitos reservados.</a></p>
+            </span>
+          </div>
+        </div>
+    </div>
+        
+    <!-- Rodapé para desktop -->
+    <div class="rodape-fundo rodape-desktop">
+      <div class="container-fluid">
+        <p id="desktop-rodape-titulo-principal">Toca o barco</p>
+        <!-- Conteudo -->
+        <div class="row">
+          <!-- Seção Menu -->
+          <div class="col-1">
+            <ul class="desktop-rodape-lista">
+              <li class="desktop-rodape-titulo">Marino</li>
+              <li class="desktop-rodape-lista-item"><a href="./sobre.html" class="desktop-rodape-menu-item">Sobre</a></li>
+              <li class="desktop-rodape-lista-item"><a href="./servicos.html" class="desktop-rodape-menu-item">Serviços</a></li>
+              <li class="desktop-rodape-lista-item"><a href="./projetos.html" class="desktop-rodape-menu-item">Projetos</a></li>
+              <li class="desktop-rodape-lista-item"><a href="./conves.html" class="desktop-rodape-menu-item">Convés</a></li>
+              <li class="desktop-rodape-lista-item"><a href="./contato.html" class="desktop-rodape-menu-item">Contato</a></li>
+            </ul>
+          </div>
+
+          <!-- Sociais -->
+          <div class="col-2">
+              <p class="desktop-rodape-titulo">Redes</p>
+              <ul class="desktop-rodape-sociais-lista">
+                <a href="https://www.instagram.com/agenciamarino/" target="_blank"><li class="desktop-rodape-item-sociais instagram">Instagram</li></a>
+                <a href="https://www.facebook.com/agenciamarino/" target="_blank"><li class="desktop-rodape-item-sociais facebook">Facebook</li></a>
+                <a href="https://www.linkedin.com/company/agenciamarino/about/" target="_blank"><li class="desktop-rodape-item-sociais linkedin">LinkedIn</li></a>
+                <a href="#" target="_blank"><li class="desktop-rodape-item-sociais whatsapp">WhatsApp</li></a>
+              </ul><br>
+              <ul class="desktop-rodape-sociais-lista">
+                <a href="#"><li class="desktop-rodape-item-sociais twitter">Twitter</li></a>
+                <a href="#"><li class="desktop-rodape-item-sociais vimeo">Vimeo</li></a>
+                <a href="#"><li class="desktop-rodape-item-sociais youtube">YouTube</li></a>
+                <a href="#"><li class="desktop-rodape-item-sociais skype">Skype</li></a>
+              </ul>
+          </div>
+
+          <!-- Endereço -->
+          <div class="col-3">
+            <p class="desktop-rodape-titulo">Faça uma visita</p>
+            <p class="desktop-rodape-texto">Avenida Expedito Garcia, 99<br>
+                Shopping Campo Grande<br>
+                Piso Superior, Sala 30<br>
+                Cariacica, ES - Brasil.</p>
+          </div>
+
+          <!-- Contato -->
+          <div class="col-3">
+            <p class="desktop-rodape-titulo">Entre em contato</p>
+            <p class="desktop-rodape-texto">+55 27 2141-7205<br>
+                +55 27 99690-7205<br>
+                contato@agenciamarino.com.br</p>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-3" id="desktop-rodape-email">
+            <p class="desktop-rodape-titulo">Newsletter</p>
+            <p id="desktop-rodape-subtitulo-newsletter">Carta Marino</p>
+            <form action="mailto:ricardoscandiani@gmail.com" method="post" enctype="text/plain">
+              <div class="inputWithIcon">
+                <input type="text" placeholder="Digite seu e-mail">
+                <i class="fas fa-arrow-right"></i>
+              </div>
+            </form>
+          </div>
+
+        </div>
+        <!-- Divisória Rodapé -->
+        <div class="desktop-rodape-divisoria">
+          <p style="border-top: 2px #1F5DCC solid;">           
+          </p>
+        </div>
+        
+        <!-- Avisos Legais -->
+        <div class="row">
+          <div class="col-6">
+            <p class="desktop-rodape-avisos"><a href="#">Termos de uso</a> <span class="desktop-rodape-avisos-divisoria">|</span> <a href="#">Politicas de privacidade</a></p>
+          </div>
+          <div class="col-6 desktop-rodape-marino">
+              © 2019 Agência Marino. Todos os direitos reservados.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </body>
+</html>
