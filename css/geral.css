@@ -93,7 +93,7 @@ html{
     height: 24px;
     cursor: pointer;
   }
-  
+
   /****************************************************************/
   /******************** Menu sobreposto mobile ********************/
   /****************************************************************/
@@ -337,10 +337,14 @@ html{
     max-width: 100%;
     background-color: #0F1C8C;
   }
+
+  .ro-mobile{
+    padding: 0px 30px;
+  }
   
   #ro-titulo{
     font-family: 'BerlingskeSerif-ExtraBold';
-    font-size:38px;
+    font-size: 30px;
     color: #ffffff;
     text-align: center;
   }
@@ -351,14 +355,14 @@ html{
   
   #ro-email-titulo{
     font-family: 'Apercu-Bold';
-    font-size: 18px;
+    font-size: 14px;
     color: #1F5DCC;
     margin-bottom: 0px;
   }
   
   #ro-email-subtitulo{
     font-family: 'BerlingskeSerif-ExtraBold';
-    font-size: 30px;
+    font-size: 26px;
     color: #ffffff;
     margin-bottom: 0rem;
   }
@@ -422,14 +426,14 @@ html{
   
   .mobile-rodape-menu-titulo{
     font-family: 'Apercu-Bold';
-    font-size: 18px;
+    font-size: 14px;
     color: #1F5DCC;
     margin-bottom: 0px;
   }
   
   .ro-sociais-lista-item{
     font-family: 'Apercu-Regular';
-    font-size: 18px;
+    font-size: 16px;
     color: #fff;
   }
   
@@ -437,9 +441,6 @@ html{
     text-decoration: none;
     color: #fff;
     border-bottom: 3px solid #fff;
-  }
-  .ro-sociais-lista li{
-    padding-bottom: 5px;
   }
   
   .mobile-lista-avisos{
@@ -488,7 +489,40 @@ html{
     color: #1F5DCC;
     margin-bottom: 5px;
   }
-  
+
+  .desktop-rodape-sociais-menu{
+    display: inline-flex;
+    margin-top: 10px;
+  }
+
+  .desktop-rodape-sociais-icones-posicao{
+    margin-right: 10px;
+  }
+
+  .desktop-rodape-sociais-botao{
+    display: inline-block;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: .3s;
+  }
+
+  .desktop-rodape-sociais-icone {
+      color: #fff;
+      background-color: #1f5dcc;
+  }
+
+  .desktop-rodape-sociais-icone:hover {
+    color: #1f5dcc;
+    background-color: #fff;
+  }
+
   .desktop-rodape-lista{
     padding-left: 0px;
     list-style: none;
@@ -507,14 +541,6 @@ html{
     text-decoration: none;
   }
   
-  .desktop-rodape-sociais-lista{
-    padding-left: 0px;
-    display: inline-flex;
-    list-style: none;
-    margin-bottom: 5px;
-    margin-top: 5px; 
-  }
-  
   .desktop-rodape-item-sociais{
     background-repeat: no-repeat;
     width: 25px;
@@ -522,71 +548,6 @@ html{
     text-indent: -9999px;
     padding-right: 27px;
   }
-  
-  .instagram{
-    background-image: url(../media/sociaisidle/insta-idle-20.png);
-  }
-  
-  .instagram:hover{
-    background-image: url(../media/sociaishover/insta-hover-20.png);
-  }
-  
-  .facebook{
-    background-image: url(../media/sociaisidle/face-idle-20.png)
-  }
-  
-  .facebook:hover{
-    background-image: url(../media/sociaishover/fb-hover-20.png)
-  }
-  
-  .linkedin{
-    background-image: url(../media/sociaisidle/in-idle-20.png)
-  }
-  
-  .linkedin:hover{
-    background-image: url(../media/sociaishover/in-hover-20.png)
-  }
-  
-  .whatsapp{
-    background-image: url(../media/sociaisidle/wpp-idle-20.png)
-  }
-  
-  .whatsapp:hover{
-    background-image: url(../media/sociaishover/wpp-hover-20.png)
-  }
-  
-  .twitter{
-    background-image: url(../media/sociaisidle/tt-idle-20.png)
-  }
-  
-  .twitter:hover{
-    background-image: url(../media/sociaishover/tt-hover-20.png)
-  }
-  
-  .vimeo{
-    background-image: url(../media/sociaisidle/vimeo-idle-20.png)
-  }
-  
-  .vimeo:hover{
-    background-image: url(../media/sociaishover/vimeo-hover-20.png)
-  }
-  
-  .youtube{
-    background-image: url(../media/sociaisidle/yt-idle-20.png)
-  }
-  
-  .youtube:hover{
-    background-image: url(../media/sociaishover/yt-hover-20.png)
-  }
-  
-  .skype{
-    background-image: url(../media/sociaisidle/skype-idle-20.png)
-  }
-  
-  .skype:hover{
-    background-image: url(../media/sociaishover/skype-hover-20.png)
-  }
-  
   
   .desktop-rodape-texto{
     color: #fff;
@@ -630,10 +591,22 @@ html{
   /**********************************************************/
   
   @media screen and (min-width: 576px){
-  
+
+  /******************** Rodapé ********************/
+
+    .menu-superior-logo {
+      width: 135px;
+      height: 40px;
+    }
+
+  /******************** Rodapé ********************/
+
+    #ro-titulo{
+      font-size: 32px;
+    }
+    
   
   }
-  
   
   /**********************************************************/
   /******************** Breakpoint 768px ********************/
@@ -643,6 +616,10 @@ html{
 
     .navbar{
       padding: 50px 40px 50px 40px;
+    }
+
+    .ro-mobile{
+      padding: 0px 40px;
     }
   
     .mobile-lista-avisos{
@@ -656,9 +633,39 @@ html{
   /**********************************************************/
   
   @media screen and (min-width: 992px){
+
+    .navbar {
+      padding: 50px 60px 50px 60px;
+    }
+
     .menu-superior-logo{
-      width: 115px; 
-      height:30px; 
+      width: 160px; 
+      height: 60px; 
+    }
+
+    .home-video-menu-link{
+      font-size: 20px;
+    }
+
+    .ro-desktop{
+      padding: 0px 60px;
+  }
+
+  /******************** Rodapé Desktop ********************/
+
+  .desktop-rodape-titulo {
+    margin-bottom: 0px;
+  }
+
+    .desktop-rodape-sociais-menu {
+      margin-top: 5px;
+    } 
+
+    .desktop-rodape-sociais-botao{
+      width: 25px;
+      height: 25px;
+      line-height: 25px;
+      font-size: 15px;
     }
   
   }
@@ -691,16 +698,12 @@ html{
     }
   
     .desktop-rodape-titulo{
-      font-size: 18px;
-      margin-bottom: 5px;
+      font-size: 16px;
+      margin-bottom: 0px;
     }
 
-    .desktop-rodape-lista-item{
-      margin-bottom: 5px;
-    }
-  
     .desktop-rodape-menu-item{
-      font-size: 18px;
+      font-size: 16px;
     }
 
     .desktop-rodape-item-sociais{
@@ -773,11 +776,11 @@ html{
     }
 
     .desktop-rodape-texto{
-      font-size: 18px;
+      font-size: 16px;
     }
   
     .desktop-rodape-avisos a{
-      font-size: 16px;
+      font-size: 14px;
       text-decoration: none;
     }
   
@@ -788,7 +791,7 @@ html{
     .desktop-rodape-avisos-divisoria{
       padding-left: 10px;
       padding-right: 10px;
-      font-size: 18px;
+      font-size: 16px;
       font-family: 'Apercu-Regular';
     }
 
