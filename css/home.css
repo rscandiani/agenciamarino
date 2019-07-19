@@ -501,6 +501,7 @@ header .container {
         padding-left: 120px;
         padding-right: 120px;
     }
+    
 
     .video-titulo{
         font-size: 72px;
@@ -528,16 +529,12 @@ header .container {
     }
 
     .c2-cartao-cliente-chamada-wrap {
-        margin-top: 13%;
+        margin-top: 11%;
         padding-left: 30px;
     }
 
     .c2-cartao-cliente{
         margin-bottom: 100px;
-    }
-
-    .c2-cartao-cliente-imagem{
-        height: 400px;
     }
 
     .c2-cartao-cliente-nome{
@@ -558,10 +555,22 @@ header .container {
         padding-left: 80px;
     }
 
+    .c3-titulo-lista{
+        font-size: 20px;
+    }
+
+    .c3-link{
+        font-size: 20px;
+    }
+
 /******************** Quarto Conteúdo ********************/
 
     .c4{
         margin-bottom: 130px;
+    }
+
+    .c4-link{
+        font-size: 20px;
     }
 
 }

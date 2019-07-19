@@ -697,6 +697,8 @@ html{
       top: 40px;
     }
   
+/******************** Rodapé Desktop ********************/
+
     .desktop-rodape-titulo{
       font-size: 16px;
       margin-bottom: 0px;
@@ -706,74 +708,12 @@ html{
       font-size: 16px;
     }
 
-    .desktop-rodape-item-sociais{
-      width: 43px;
-      height: 40px;
-    }
-  
-    .instagram{
-      background-image: url(../media/sociaisidle/insta-idle-40.png);
-    }
-    
-    .instagram:hover{
-      background-image: url(../media/sociaishover/insta-hover-40.png);
-    }
-    
-    .facebook{
-      background-image: url(../media/sociaisidle/face-idle-40.png)
-    }
-    
-    .facebook:hover{
-      background-image: url(../media/sociaishover/fb-hover-40.png)
-    }
-    
-    .linkedin{
-      background-image: url(../media/sociaisidle/in-idle-40.png)
-    }
-    
-    .linkedin:hover{
-      background-image: url(../media/sociaishover/in-hover-40.png)
-    }
-    
-    .whatsapp{
-      background-image: url(../media/sociaisidle/wpp-idle-40.png)
-    }
-    
-    .whatsapp:hover{
-      background-image: url(../media/sociaishover/wpp-hover-40.png)
-    }
-    
-    .twitter{
-      background-image: url(../media/sociaisidle/tt-idle-40.png)
-    }
-    
-    .twitter:hover{
-      background-image: url(../media/sociaishover/tt-hover-40.png)
-    }
-    
-    .vimeo{
-      background-image: url(../media/sociaisidle/vimeo-idle-40.png)
-    }
-    
-    .vimeo:hover{
-      background-image: url(../media/sociaishover/vimeo-hover-40.png)
-    }
-    
-    .youtube{
-      background-image: url(../media/sociaisidle/yt-idle-40.png)
-    }
-    
-    .youtube:hover{
-      background-image: url(../media/sociaishover/yt-hover-40.png)
-    }
-    
-    .skype{
-      background-image: url(../media/sociaisidle/skype-idle-40.png)
-    }
-    
-    .skype:hover{
-      background-image: url(../media/sociaishover/skype-hover-40.png)
-    }
+    .desktop-rodape-sociais-botao {
+      width: 35px;
+      height: 35px;
+      line-height: 35px;
+      font-size: 20px;
+  }
 
     .desktop-rodape-texto{
       font-size: 16px;
